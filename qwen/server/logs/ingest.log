@@ -1,0 +1,289 @@
+2025-11-04 12:47:42,440 - MainProcess - INFO - Loading external metadata from data/metadata.jsonl
+2025-11-04 12:47:42,442 - MainProcess - INFO - Loaded 27 external metadata entries.
+2025-11-04 12:47:42,443 - MainProcess - INFO - Found 21 files under data
+2025-11-04 12:47:42,444 - MainProcess - INFO - Starting batch processing with 4 workers...
+2025-11-04 12:47:43,764 - ForkPoolWorker-4 - INFO - Extracted and cleaned: hecu108.pdf (5355 tokens)
+2025-11-04 12:47:46,123 - ForkPoolWorker-1 - INFO - Extracted and cleaned: lech105.pdf (9152 tokens)
+2025-11-04 12:47:47,626 - ForkPoolWorker-2 - INFO - Extracted and cleaned: kech101.pdf (13390 tokens)
+2025-11-04 12:47:50,746 - ForkPoolWorker-1 - INFO - Extracted and cleaned: lech104.pdf (12316 tokens)
+2025-11-04 12:47:52,354 - ForkPoolWorker-2 - INFO - Extracted and cleaned: kech103.pdf (11333 tokens)
+2025-11-04 12:47:53,975 - ForkPoolWorker-2 - INFO - Extracted and cleaned: iesc104.pdf (4299 tokens)
+2025-11-04 12:47:56,452 - ForkPoolWorker-3 - INFO - Extracted and cleaned: jesc102.pdf (6347 tokens)
+2025-11-04 12:48:01,686 - ForkPoolWorker-2 - INFO - Extracted and cleaned: jesc103.pdf (6892 tokens)
+2025-11-04 12:48:05,223 - ForkPoolWorker-2 - INFO - Extracted and cleaned: iesc103.pdf (4372 tokens)
+2025-11-04 12:48:08,328 - ForkPoolWorker-3 - INFO - Extracted and cleaned: kech104.pdf (15202 tokens)
+2025-11-04 12:48:08,757 - ForkPoolWorker-2 - INFO - OCR used for page 1 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:48:10,401 - ForkPoolWorker-3 - INFO - OCR used for page 1 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:54:05,403 - MainProcess - INFO - Loading external metadata from data/metadata.jsonl
+2025-11-04 12:54:05,403 - MainProcess - INFO - Loaded 27 external metadata entries.
+2025-11-04 12:54:05,403 - MainProcess - INFO - Found 22 files under data
+2025-11-04 12:54:05,404 - MainProcess - INFO - Starting batch processing with 4 workers...
+2025-11-04 12:54:06,492 - ForkPoolWorker-4 - INFO - Extracted and cleaned: hecu108.pdf (5355 tokens)
+2025-11-04 12:54:08,490 - ForkPoolWorker-1 - INFO - Extracted and cleaned: lech105.pdf (9152 tokens)
+2025-11-04 12:54:10,328 - ForkPoolWorker-2 - INFO - Extracted and cleaned: kech101.pdf (13390 tokens)
+2025-11-04 12:54:13,115 - ForkPoolWorker-1 - INFO - Extracted and cleaned: lech104.pdf (12316 tokens)
+2025-11-04 12:54:14,999 - ForkPoolWorker-2 - INFO - Extracted and cleaned: kech103.pdf (11333 tokens)
+2025-11-04 12:54:16,609 - ForkPoolWorker-2 - INFO - Extracted and cleaned: iesc104.pdf (4299 tokens)
+2025-11-04 12:54:18,851 - ForkPoolWorker-3 - INFO - Extracted and cleaned: jesc102.pdf (6347 tokens)
+2025-11-04 12:54:24,545 - ForkPoolWorker-2 - INFO - Extracted and cleaned: jesc103.pdf (6892 tokens)
+2025-11-04 12:54:27,806 - ForkPoolWorker-2 - INFO - Extracted and cleaned: iesc103.pdf (4372 tokens)
+2025-11-04 12:54:29,380 - ForkPoolWorker-3 - INFO - Extracted and cleaned: kech104.pdf (15202 tokens)
+2025-11-04 12:54:29,803 - ForkPoolWorker-2 - INFO - OCR used for page 1 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:54:31,298 - ForkPoolWorker-3 - INFO - OCR used for page 1 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:54:31,587 - ForkPoolWorker-2 - INFO - OCR used for page 2 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:54:33,371 - ForkPoolWorker-3 - INFO - OCR used for page 2 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:54:33,509 - ForkPoolWorker-2 - INFO - OCR used for page 3 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:54:33,585 - ForkPoolWorker-1 - INFO - Extracted and cleaned: jesc101.pdf (5146 tokens)
+2025-11-04 12:54:35,000 - ForkPoolWorker-3 - INFO - OCR used for page 3 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:54:35,169 - ForkPoolWorker-2 - INFO - OCR used for page 4 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:54:36,505 - ForkPoolWorker-2 - INFO - OCR used for page 5 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:54:36,804 - ForkPoolWorker-2 - INFO - OCR used for page 6 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:54:36,809 - ForkPoolWorker-2 - INFO - Extracted and cleaned: _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf (902 tokens)
+2025-11-04 12:54:36,875 - ForkPoolWorker-3 - INFO - OCR used for page 4 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:54:37,949 - ForkPoolWorker-2 - INFO - OCR used for page 1 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:38,228 - ForkPoolWorker-3 - INFO - OCR used for page 5 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:54:39,007 - ForkPoolWorker-3 - INFO - OCR used for page 6 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:54:39,010 - ForkPoolWorker-3 - INFO - Extracted and cleaned: S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf (1017 tokens)
+2025-11-04 12:54:39,022 - ForkPoolWorker-3 - INFO - Extracted and cleaned: elementdatavalues.csv (4881 tokens)
+2025-11-04 12:54:39,218 - ForkPoolWorker-2 - INFO - OCR used for page 2 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:40,108 - ForkPoolWorker-3 - INFO - OCR used for page 1 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:40,317 - ForkPoolWorker-2 - INFO - OCR used for page 3 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:41,636 - ForkPoolWorker-3 - INFO - OCR used for page 2 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:41,754 - ForkPoolWorker-2 - INFO - OCR used for page 4 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:43,144 - ForkPoolWorker-2 - INFO - OCR used for page 5 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:43,328 - ForkPoolWorker-3 - INFO - OCR used for page 3 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:44,153 - ForkPoolWorker-1 - INFO - Extracted and cleaned: kech102.pdf (22089 tokens)
+2025-11-04 12:54:45,039 - ForkPoolWorker-2 - INFO - OCR used for page 6 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:45,043 - ForkPoolWorker-3 - INFO - OCR used for page 4 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:46,279 - ForkPoolWorker-1 - INFO - OCR used for page 1 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:54:46,771 - ForkPoolWorker-2 - INFO - OCR used for page 7 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:46,897 - ForkPoolWorker-3 - INFO - OCR used for page 5 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:48,233 - ForkPoolWorker-1 - INFO - OCR used for page 2 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:54:48,243 - ForkPoolWorker-2 - INFO - OCR used for page 8 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:48,369 - ForkPoolWorker-3 - INFO - OCR used for page 6 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:49,191 - ForkPoolWorker-3 - INFO - OCR used for page 7 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:49,642 - ForkPoolWorker-2 - INFO - OCR used for page 9 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:50,572 - ForkPoolWorker-1 - INFO - OCR used for page 3 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:54:50,980 - ForkPoolWorker-2 - INFO - OCR used for page 10 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:51,092 - ForkPoolWorker-3 - INFO - OCR used for page 8 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:51,912 - ForkPoolWorker-4 - INFO - Extracted and cleaned: jesc104.pdf (7535 tokens)
+2025-11-04 12:54:52,160 - ForkPoolWorker-1 - INFO - OCR used for page 4 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:54:52,863 - ForkPoolWorker-3 - INFO - OCR used for page 9 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:52,871 - ForkPoolWorker-2 - INFO - OCR used for page 11 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:53,335 - ForkPoolWorker-1 - INFO - OCR used for page 5 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:54:53,787 - ForkPoolWorker-1 - INFO - OCR used for page 6 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:54:54,132 - ForkPoolWorker-2 - INFO - OCR used for page 12 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:54,181 - ForkPoolWorker-3 - INFO - OCR used for page 10 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:54,254 - ForkPoolWorker-1 - INFO - OCR used for page 7 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:54:54,811 - ForkPoolWorker-1 - INFO - OCR used for page 8 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:54:54,818 - ForkPoolWorker-1 - INFO - Extracted and cleaned: D and F Block Elements_ Concept, Properties & Questions.pdf (1151 tokens)
+2025-11-04 12:54:55,653 - ForkPoolWorker-2 - INFO - OCR used for page 13 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:55,784 - ForkPoolWorker-3 - INFO - OCR used for page 11 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:56,688 - ForkPoolWorker-1 - INFO - OCR used for page 1 of Understanding the Modern Periodic Table and Its Elements.pdf
+2025-11-04 12:54:57,039 - ForkPoolWorker-3 - INFO - OCR used for page 12 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:57,367 - ForkPoolWorker-2 - INFO - OCR used for page 14 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:58,396 - ForkPoolWorker-1 - INFO - OCR used for page 2 of Understanding the Modern Periodic Table and Its Elements.pdf
+2025-11-04 12:54:58,952 - ForkPoolWorker-3 - INFO - OCR used for page 13 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:54:58,976 - ForkPoolWorker-2 - INFO - OCR used for page 15 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:54:59,958 - ForkPoolWorker-1 - INFO - OCR used for page 3 of Understanding the Modern Periodic Table and Its Elements.pdf
+2025-11-04 12:55:00,587 - ForkPoolWorker-2 - INFO - OCR used for page 16 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:00,620 - ForkPoolWorker-3 - INFO - OCR used for page 14 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:01,339 - ForkPoolWorker-1 - INFO - OCR used for page 4 of Understanding the Modern Periodic Table and Its Elements.pdf
+2025-11-04 12:55:01,343 - ForkPoolWorker-1 - INFO - Extracted and cleaned: Understanding the Modern Periodic Table and Its Elements.pdf (791 tokens)
+2025-11-04 12:55:01,876 - ForkPoolWorker-2 - INFO - OCR used for page 17 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:02,017 - ForkPoolWorker-3 - INFO - OCR used for page 15 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:03,408 - ForkPoolWorker-2 - INFO - OCR used for page 18 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:03,438 - ForkPoolWorker-3 - INFO - OCR used for page 16 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:04,244 - ForkPoolWorker-3 - INFO - OCR used for page 17 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:04,997 - ForkPoolWorker-2 - INFO - OCR used for page 19 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:05,657 - ForkPoolWorker-3 - INFO - OCR used for page 18 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:06,365 - ForkPoolWorker-2 - INFO - OCR used for page 20 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:06,878 - ForkPoolWorker-3 - INFO - OCR used for page 19 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:07,833 - ForkPoolWorker-2 - INFO - OCR used for page 21 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:07,979 - ForkPoolWorker-3 - INFO - OCR used for page 20 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:08,467 - ForkPoolWorker-3 - INFO - OCR used for page 21 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:09,329 - ForkPoolWorker-2 - INFO - OCR used for page 22 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:09,504 - ForkPoolWorker-3 - INFO - OCR used for page 22 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:10,428 - ForkPoolWorker-2 - INFO - OCR used for page 23 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:10,683 - ForkPoolWorker-3 - INFO - OCR used for page 23 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:11,734 - ForkPoolWorker-3 - INFO - OCR used for page 24 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:12,641 - ForkPoolWorker-3 - INFO - OCR used for page 25 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:13,196 - ForkPoolWorker-3 - INFO - OCR used for page 26 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:14,172 - ForkPoolWorker-2 - INFO - OCR used for page 27 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:14,419 - ForkPoolWorker-3 - INFO - OCR used for page 27 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:15,242 - ForkPoolWorker-2 - INFO - OCR used for page 28 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:16,021 - ForkPoolWorker-3 - INFO - OCR used for page 28 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:16,815 - ForkPoolWorker-2 - INFO - OCR used for page 29 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:17,515 - ForkPoolWorker-3 - INFO - OCR used for page 29 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:18,004 - ForkPoolWorker-3 - INFO - OCR used for page 30 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:18,501 - ForkPoolWorker-2 - INFO - OCR used for page 30 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:18,624 - ForkPoolWorker-3 - INFO - OCR used for page 31 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:18,967 - ForkPoolWorker-3 - INFO - OCR used for page 32 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:55:18,978 - ForkPoolWorker-3 - INFO - Extracted and cleaned: Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf (4962 tokens)
+2025-11-04 12:55:19,828 - ForkPoolWorker-2 - INFO - OCR used for page 31 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:20,442 - ForkPoolWorker-3 - INFO - OCR used for page 1 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:55:21,059 - ForkPoolWorker-2 - INFO - OCR used for page 32 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:21,820 - ForkPoolWorker-3 - INFO - OCR used for page 2 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:55:22,236 - ForkPoolWorker-2 - INFO - OCR used for page 33 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:23,332 - ForkPoolWorker-3 - INFO - OCR used for page 3 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:55:23,377 - ForkPoolWorker-2 - INFO - OCR used for page 34 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:24,693 - ForkPoolWorker-2 - INFO - OCR used for page 35 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:25,315 - ForkPoolWorker-3 - INFO - OCR used for page 4 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:55:26,319 - ForkPoolWorker-2 - INFO - OCR used for page 36 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:27,276 - ForkPoolWorker-3 - INFO - OCR used for page 5 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:55:27,983 - ForkPoolWorker-3 - INFO - OCR used for page 6 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:55:28,425 - ForkPoolWorker-3 - INFO - OCR used for page 7 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:55:28,999 - ForkPoolWorker-3 - INFO - OCR used for page 8 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:55:29,002 - ForkPoolWorker-3 - INFO - Extracted and cleaned: P Block Elements_ Explanation, Properties & Short Revision Notes.pdf (1233 tokens)
+2025-11-04 12:55:29,886 - ForkPoolWorker-2 - INFO - OCR used for page 39 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:30,967 - ForkPoolWorker-2 - INFO - OCR used for page 40 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:33,395 - ForkPoolWorker-2 - INFO - OCR used for page 42 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:34,625 - ForkPoolWorker-2 - INFO - OCR used for page 43 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:35,718 - ForkPoolWorker-2 - INFO - OCR used for page 44 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:36,814 - ForkPoolWorker-2 - INFO - OCR used for page 45 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:37,989 - ForkPoolWorker-2 - INFO - OCR used for page 46 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:39,150 - ForkPoolWorker-2 - INFO - OCR used for page 47 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:40,393 - ForkPoolWorker-2 - INFO - OCR used for page 48 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:41,605 - ForkPoolWorker-2 - INFO - OCR used for page 49 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:42,759 - ForkPoolWorker-2 - INFO - OCR used for page 50 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:43,901 - ForkPoolWorker-2 - INFO - OCR used for page 51 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:45,090 - ForkPoolWorker-2 - INFO - OCR used for page 52 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:46,242 - ForkPoolWorker-2 - INFO - OCR used for page 53 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:47,358 - ForkPoolWorker-2 - INFO - OCR used for page 54 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:48,919 - ForkPoolWorker-2 - INFO - OCR used for page 55 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:50,007 - ForkPoolWorker-2 - INFO - OCR used for page 56 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:51,206 - ForkPoolWorker-2 - INFO - OCR used for page 57 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:52,328 - ForkPoolWorker-2 - INFO - OCR used for page 58 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:55:53,353 - ForkPoolWorker-2 - INFO - Extracted and cleaned: ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf (2175 tokens)
+2025-11-04 12:55:54,680 - ForkPoolWorker-2 - INFO - OCR used for page 1 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:55:55,783 - ForkPoolWorker-2 - INFO - OCR used for page 2 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:55:56,218 - ForkPoolWorker-2 - INFO - OCR used for page 3 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:55:57,731 - ForkPoolWorker-2 - INFO - OCR used for page 4 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:55:58,479 - ForkPoolWorker-2 - INFO - OCR used for page 5 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:55:58,874 - ForkPoolWorker-2 - INFO - OCR used for page 6 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:55:58,878 - ForkPoolWorker-2 - INFO - Extracted and cleaned: Fascinating Facts About the Periodic Table.pdf (749 tokens)
+2025-11-04 12:55:58,986 - MainProcess - INFO - Processed 22 files. Found 22 unique, 0 duplicates/errors.
+2025-11-04 12:55:58,996 - MainProcess - INFO - Wrote manifest for 22 unique docs to processed/docs_manifest.jsonl
+2025-11-04 12:57:49,484 - MainProcess - INFO - OCR used for page 1 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:57:50,650 - MainProcess - INFO - OCR used for page 2 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:57:51,971 - MainProcess - INFO - OCR used for page 3 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:57:52,997 - MainProcess - INFO - OCR used for page 4 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:57:53,907 - MainProcess - INFO - OCR used for page 5 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:57:54,141 - MainProcess - INFO - OCR used for page 6 of _Classification of Elements and Periodicity in Properties_ Trends & Explanations_.pdf
+2025-11-04 12:57:55,331 - MainProcess - INFO - OCR used for page 1 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:57:56,669 - MainProcess - INFO - OCR used for page 2 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:57:57,700 - MainProcess - INFO - OCR used for page 3 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:57:58,835 - MainProcess - INFO - OCR used for page 4 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:57:59,828 - MainProcess - INFO - OCR used for page 5 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:58:00,413 - MainProcess - INFO - OCR used for page 6 of S Block Elements_ Complete Guide with Concepts, Notes & Questions.pdf
+2025-11-04 12:58:01,332 - MainProcess - INFO - OCR used for page 1 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:02,347 - MainProcess - INFO - OCR used for page 2 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:03,237 - MainProcess - INFO - OCR used for page 3 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:04,325 - MainProcess - INFO - OCR used for page 4 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:05,409 - MainProcess - INFO - OCR used for page 5 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:06,809 - MainProcess - INFO - OCR used for page 6 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:08,034 - MainProcess - INFO - OCR used for page 7 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:09,159 - MainProcess - INFO - OCR used for page 8 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:10,291 - MainProcess - INFO - OCR used for page 9 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:11,366 - MainProcess - INFO - OCR used for page 10 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:12,756 - MainProcess - INFO - OCR used for page 11 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:13,835 - MainProcess - INFO - OCR used for page 12 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:15,077 - MainProcess - INFO - OCR used for page 13 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:16,428 - MainProcess - INFO - OCR used for page 14 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:17,611 - MainProcess - INFO - OCR used for page 15 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:18,868 - MainProcess - INFO - OCR used for page 16 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:19,921 - MainProcess - INFO - OCR used for page 17 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:21,173 - MainProcess - INFO - OCR used for page 18 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:22,445 - MainProcess - INFO - OCR used for page 19 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:23,551 - MainProcess - INFO - OCR used for page 20 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:24,743 - MainProcess - INFO - OCR used for page 21 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:25,960 - MainProcess - INFO - OCR used for page 22 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:26,967 - MainProcess - INFO - OCR used for page 23 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:30,373 - MainProcess - INFO - OCR used for page 27 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:31,334 - MainProcess - INFO - OCR used for page 28 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:32,566 - MainProcess - INFO - OCR used for page 29 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:33,798 - MainProcess - INFO - OCR used for page 30 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:34,920 - MainProcess - INFO - OCR used for page 31 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:35,992 - MainProcess - INFO - OCR used for page 32 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:37,045 - MainProcess - INFO - OCR used for page 33 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:38,022 - MainProcess - INFO - OCR used for page 34 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:39,148 - MainProcess - INFO - OCR used for page 35 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:40,420 - MainProcess - INFO - OCR used for page 36 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:43,323 - MainProcess - INFO - OCR used for page 39 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:44,340 - MainProcess - INFO - OCR used for page 40 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:46,629 - MainProcess - INFO - OCR used for page 42 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:47,694 - MainProcess - INFO - OCR used for page 43 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:48,683 - MainProcess - INFO - OCR used for page 44 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:49,746 - MainProcess - INFO - OCR used for page 45 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:50,746 - MainProcess - INFO - OCR used for page 46 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:51,723 - MainProcess - INFO - OCR used for page 47 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:52,833 - MainProcess - INFO - OCR used for page 48 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:53,913 - MainProcess - INFO - OCR used for page 49 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:55,006 - MainProcess - INFO - OCR used for page 50 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:56,114 - MainProcess - INFO - OCR used for page 51 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:57,182 - MainProcess - INFO - OCR used for page 52 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:58,237 - MainProcess - INFO - OCR used for page 53 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:58:59,244 - MainProcess - INFO - OCR used for page 54 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:59:00,416 - MainProcess - INFO - OCR used for page 55 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:59:01,411 - MainProcess - INFO - OCR used for page 56 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:59:02,550 - MainProcess - INFO - OCR used for page 57 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:59:03,639 - MainProcess - INFO - OCR used for page 58 of ___V_K_Jaiswal_Inorganic_Chemistry__Periodic_Table_with_anno.pdf
+2025-11-04 12:59:05,747 - MainProcess - INFO - OCR used for page 1 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:59:06,796 - MainProcess - INFO - OCR used for page 2 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:59:07,227 - MainProcess - INFO - OCR used for page 3 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:59:08,553 - MainProcess - INFO - OCR used for page 4 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:59:09,203 - MainProcess - INFO - OCR used for page 5 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:59:09,601 - MainProcess - INFO - OCR used for page 6 of Fascinating Facts About the Periodic Table.pdf
+2025-11-04 12:59:10,352 - MainProcess - INFO - OCR used for page 1 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:11,479 - MainProcess - INFO - OCR used for page 2 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:12,547 - MainProcess - INFO - OCR used for page 3 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:13,682 - MainProcess - INFO - OCR used for page 4 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:14,921 - MainProcess - INFO - OCR used for page 5 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:15,943 - MainProcess - INFO - OCR used for page 6 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:16,497 - MainProcess - INFO - OCR used for page 7 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:17,666 - MainProcess - INFO - OCR used for page 8 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:18,865 - MainProcess - INFO - OCR used for page 9 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:19,859 - MainProcess - INFO - OCR used for page 10 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:21,110 - MainProcess - INFO - OCR used for page 11 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:22,063 - MainProcess - INFO - OCR used for page 12 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:23,416 - MainProcess - INFO - OCR used for page 13 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:24,557 - MainProcess - INFO - OCR used for page 14 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:25,620 - MainProcess - INFO - OCR used for page 15 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:26,722 - MainProcess - INFO - OCR used for page 16 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:27,388 - MainProcess - INFO - OCR used for page 17 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:28,475 - MainProcess - INFO - OCR used for page 18 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:29,424 - MainProcess - INFO - OCR used for page 19 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:30,327 - MainProcess - INFO - OCR used for page 20 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:30,713 - MainProcess - INFO - OCR used for page 21 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:31,528 - MainProcess - INFO - OCR used for page 22 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:32,469 - MainProcess - INFO - OCR used for page 23 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:33,389 - MainProcess - INFO - OCR used for page 24 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:34,210 - MainProcess - INFO - OCR used for page 25 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:34,683 - MainProcess - INFO - OCR used for page 26 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:35,641 - MainProcess - INFO - OCR used for page 27 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:36,933 - MainProcess - INFO - OCR used for page 28 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:37,976 - MainProcess - INFO - OCR used for page 29 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:38,354 - MainProcess - INFO - OCR used for page 30 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:38,817 - MainProcess - INFO - OCR used for page 31 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:39,106 - MainProcess - INFO - OCR used for page 32 of Chemical Bonding and Molecular Structure Chapter - Chemistry JEE Main.pdf
+2025-11-04 12:59:40,239 - MainProcess - INFO - OCR used for page 1 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:59:41,374 - MainProcess - INFO - OCR used for page 2 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:59:42,500 - MainProcess - INFO - OCR used for page 3 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:59:44,028 - MainProcess - INFO - OCR used for page 4 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:59:45,448 - MainProcess - INFO - OCR used for page 5 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:59:45,947 - MainProcess - INFO - OCR used for page 6 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:59:46,361 - MainProcess - INFO - OCR used for page 7 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:59:46,824 - MainProcess - INFO - OCR used for page 8 of P Block Elements_ Explanation, Properties & Short Revision Notes.pdf
+2025-11-04 12:59:48,198 - MainProcess - INFO - OCR used for page 1 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:59:49,469 - MainProcess - INFO - OCR used for page 2 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:59:51,068 - MainProcess - INFO - OCR used for page 3 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:59:52,174 - MainProcess - INFO - OCR used for page 4 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:59:53,089 - MainProcess - INFO - OCR used for page 5 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:59:53,466 - MainProcess - INFO - OCR used for page 6 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:59:53,836 - MainProcess - INFO - OCR used for page 7 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:59:54,303 - MainProcess - INFO - OCR used for page 8 of D and F Block Elements_ Concept, Properties & Questions.pdf
+2025-11-04 12:59:55,647 - MainProcess - INFO - OCR used for page 1 of Understanding the Modern Periodic Table and Its Elements.pdf
+2025-11-04 12:59:56,892 - MainProcess - INFO - OCR used for page 2 of Understanding the Modern Periodic Table and Its Elements.pdf
+2025-11-04 12:59:58,146 - MainProcess - INFO - OCR used for page 3 of Understanding the Modern Periodic Table and Its Elements.pdf
+2025-11-04 12:59:59,181 - MainProcess - INFO - OCR used for page 4 of Understanding the Modern Periodic Table and Its Elements.pdf
+2025-11-04 12:59:59,186 - MainProcess - INFO - Wrote 2185 chunks to processed/chunks.jsonl

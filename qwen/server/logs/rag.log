@@ -1,0 +1,191 @@
+2025-11-04 13:05:29,053 - INFO - --- Initializing RAG Pipeline ---
+2025-11-04 13:05:33,771 - INFO - Using device: cuda
+2025-11-04 13:05:33,771 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 13:07:33,665 - INFO - --- Initializing RAG Pipeline ---
+2025-11-04 13:07:45,595 - INFO - Using device: cuda
+2025-11-04 13:07:45,595 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 13:09:10,472 - INFO - --- Initializing RAG Pipeline ---
+2025-11-04 13:09:14,915 - INFO - Using device: cuda
+2025-11-04 13:09:14,915 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 13:10:53,639 - INFO - --- Initializing RAG Pipeline ---
+2025-11-04 13:10:57,862 - INFO - Using device: cuda
+2025-11-04 13:10:57,862 - INFO - Loading generation model: google/gemma-3-270m-it
+2025-11-04 13:11:01,489 - INFO - Step 1: Retrieving context...
+2025-11-04 13:11:02,541 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-04 13:11:02,549 - INFO - Step 3: Generating answer...
+2025-11-04 13:17:12,691 - INFO - --- Initializing RAG Pipeline ---
+2025-11-04 13:17:17,076 - INFO - Using device: cuda
+2025-11-04 13:17:17,076 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 13:18:40,273 - INFO - --- Initializing RAG Pipeline ---
+2025-11-04 13:18:48,528 - INFO - Using device: cuda
+2025-11-04 13:18:48,529 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 13:25:41,218 - ERROR - Failed to load generation model 'Qwen/Qwen3-1.7B': CUDA out of memory. Tried to allocate 594.00 MiB. GPU 0 has a total capacity of 3.68 GiB of which 285.69 MiB is free. Process 3073 has 71.68 MiB memory in use. Including non-PyTorch memory, this process has 3.30 GiB memory in use. Of the allocated memory 3.15 GiB is allocated by PyTorch, and 82.43 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-11-04 13:25:41,219 - ERROR - A critical error occurred in the RAG pipeline: CUDA out of memory. Tried to allocate 594.00 MiB. GPU 0 has a total capacity of 3.68 GiB of which 285.69 MiB is free. Process 3073 has 71.68 MiB memory in use. Including non-PyTorch memory, this process has 3.30 GiB memory in use. Of the allocated memory 3.15 GiB is allocated by PyTorch, and 82.43 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-11-04 13:29:31,153 - INFO - --- Initializing RAG Pipeline ---
+2025-11-04 13:29:37,436 - INFO - Using device: cuda
+2025-11-04 13:29:37,436 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 13:29:40,361 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-04 13:29:40,932 - ERROR - Failed to load generation model 'Qwen/Qwen3-1.7B': Some modules are dispatched on the CPU or the disk. Make sure you have enough GPU RAM to fit the quantized model. If you want to dispatch the model on the CPU or the disk while keeping these modules in 32-bit, you need to set `llm_int8_enable_fp32_cpu_offload=True` and pass a custom `device_map` to `from_pretrained`. Check https://huggingface.co/docs/transformers/main/en/main_classes/quantization#offload-between-cpu-and-gpu for more details. 
+2025-11-04 13:29:40,932 - ERROR - A critical error occurred in the RAG pipeline: Some modules are dispatched on the CPU or the disk. Make sure you have enough GPU RAM to fit the quantized model. If you want to dispatch the model on the CPU or the disk while keeping these modules in 32-bit, you need to set `llm_int8_enable_fp32_cpu_offload=True` and pass a custom `device_map` to `from_pretrained`. Check https://huggingface.co/docs/transformers/main/en/main_classes/quantization#offload-between-cpu-and-gpu for more details. 
+2025-11-04 13:30:29,754 - INFO - --- Initializing RAG Pipeline ---
+2025-11-04 13:30:35,497 - INFO - Using device: cuda
+2025-11-04 13:30:35,497 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 13:30:37,614 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-04 13:30:40,585 - ERROR - Failed to load generation model 'Qwen/Qwen3-1.7B': CUDA out of memory. Tried to allocate 594.00 MiB. GPU 0 has a total capacity of 3.68 GiB of which 147.69 MiB is free. Process 3073 has 71.68 MiB memory in use. Including non-PyTorch memory, this process has 3.43 GiB memory in use. Of the allocated memory 3.34 GiB is allocated by PyTorch, and 22.60 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-11-04 13:30:40,585 - ERROR - A critical error occurred in the RAG pipeline: CUDA out of memory. Tried to allocate 594.00 MiB. GPU 0 has a total capacity of 3.68 GiB of which 147.69 MiB is free. Process 3073 has 71.68 MiB memory in use. Including non-PyTorch memory, this process has 3.43 GiB memory in use. Of the allocated memory 3.34 GiB is allocated by PyTorch, and 22.60 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-11-04 13:33:40,062 - INFO - --- Initializing RAG Pipeline ---
+2025-11-04 13:33:45,962 - INFO - Using device: cuda
+2025-11-04 13:33:45,962 - INFO - Step 1: Retrieving context...
+2025-11-04 13:33:47,999 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 13:33:51,364 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-04 13:33:57,277 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-04 13:33:57,288 - INFO - Step 3: Generating answer...
+2025-11-04 13:34:16,580 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+Okay, let's see. The user is asking about the heaviest and lightest elements in the periodic table.
+
+First, I need to recall what the periodic table's elements are. The lightest element is hydrogen (H), which is the first element on the table. The heaviest is oganesson (Og), which is the las
+2025-11-04 13:36:24,325 - INFO - --- Initializing RAG Pipeline ---
+2025-11-04 13:36:32,671 - INFO - Using device: cuda
+2025-11-04 13:36:32,671 - INFO - Step 1: Retrieving context...
+2025-11-04 13:36:34,251 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 13:36:38,037 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-04 13:36:41,273 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-04 13:36:41,283 - INFO - Step 3: Generating answer...
+2025-11-04 13:36:50,973 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>
+2025-11-04 14:02:01,494 - INFO - Using device: cuda
+2025-11-04 14:02:01,494 - INFO - Step 1: Retrieving context...
+2025-11-04 14:02:03,294 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 14:02:07,019 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-04 14:02:12,447 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-04 14:02:12,458 - INFO - Step 3: Generating answer...
+2025-11-04 14:03:04,753 - INFO - Using device: cuda
+2025-11-04 14:03:04,762 - INFO - Step 1: Retrieving context...
+2025-11-04 14:03:06,441 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-04 14:03:07,317 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-04 14:03:12,786 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-04 14:03:12,857 - INFO - Step 3: Generating answer...
+2025-11-05 20:54:09,063 - INFO - --- Initializing RAG Pipeline ---
+2025-11-05 20:54:09,067 - ERROR - A critical error occurred in the RAG pipeline: Could not connect to Elasticsearch.
+2025-11-05 20:56:29,957 - INFO - --- Initializing RAG Pipeline ---
+2025-11-05 20:56:42,145 - INFO - Using device: cuda
+2025-11-05 20:56:42,146 - INFO - Step 1: Retrieving context...
+2025-11-05 20:56:43,051 - WARNING - No context retrieved. Cannot generate an answer.
+2025-11-05 21:04:25,065 - INFO - --- Initializing RAG Pipeline ---
+2025-11-05 21:04:29,258 - INFO - Using device: cuda
+2025-11-05 21:04:29,259 - INFO - Step 1: Retrieving context...
+2025-11-05 21:04:31,342 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 21:04:35,378 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-05 21:04:42,616 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-05 21:04:42,627 - INFO - Step 3: Generating answer...
+2025-11-05 21:05:03,964 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+Okay, the user is asking, "What is periodic table?" Let me check the context provided.
+
+Looking through the context, there's a lot about the periodic table, but the main points are: it's an ordered arrangement of chemical elements by atomic number, the periodic law, Dmitri Mendeleev's work, 
+2025-11-05 21:46:42,923 - INFO - Using device: cuda
+2025-11-05 21:48:40,548 - INFO - Using device: cuda
+2025-11-05 21:49:33,510 - INFO - Using device: cuda
+2025-11-05 21:49:48,338 - INFO - Using device: cuda
+2025-11-05 21:50:58,349 - INFO - Using device: cuda
+2025-11-05 21:51:44,549 - INFO - Step 1: Retrieving context...
+2025-11-05 21:51:46,940 - INFO - Loading generation model: google/gemma-3-9b-it
+2025-11-05 21:51:47,412 - ERROR - Failed to load generation model 'google/gemma-3-9b-it': google/gemma-3-9b-it is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+2025-11-05 21:52:50,591 - INFO - Using device: cuda
+2025-11-05 21:52:54,079 - INFO - Step 1: Retrieving context...
+2025-11-05 21:52:55,945 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 21:53:02,199 - ERROR - Failed to load generation model 'Qwen/Qwen3-1.7B': CUDA out of memory. Tried to allocate 594.00 MiB. GPU 0 has a total capacity of 3.68 GiB of which 381.69 MiB is free. Process 2999 has 71.68 MiB memory in use. Including non-PyTorch memory, this process has 3.21 GiB memory in use. Of the allocated memory 3.06 GiB is allocated by PyTorch, and 58.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-11-05 22:00:02,916 - INFO - Using device: cuda
+2025-11-05 22:00:30,148 - INFO - Using device: cuda
+2025-11-05 22:00:32,411 - INFO - Step 1: Retrieving context...
+2025-11-05 22:00:34,686 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 22:00:37,926 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-05 22:00:46,321 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-05 22:00:46,334 - INFO - Step 3: Generating answer...
+2025-11-05 22:01:15,426 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>
+2025-11-05 22:22:41,793 - INFO - Using device: cuda
+2025-11-05 22:23:45,260 - INFO - Step 1: Retrieving context...
+2025-11-05 22:23:47,707 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 22:23:51,043 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-05 22:23:59,843 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-05 22:23:59,899 - INFO - Step 3: Generating answer...
+2025-11-05 22:24:27,674 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>
+2025-11-05 22:28:24,506 - INFO - Using device: cuda
+2025-11-05 22:28:31,125 - INFO - Step 1: Retrieving context...
+2025-11-05 22:28:33,326 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 22:28:36,719 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-05 22:28:41,679 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-05 22:28:41,713 - INFO - Step 3: Generating answer...
+2025-11-05 22:28:48,176 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>
+2025-11-05 22:30:43,879 - INFO - Using device: cuda
+2025-11-05 22:30:46,986 - INFO - Step 1: Retrieving context...
+2025-11-05 22:30:49,679 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 22:30:52,976 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-05 22:30:56,614 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-05 22:30:56,625 - INFO - Step 3: Generating answer...
+2025-11-05 22:31:01,395 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>
+2025-11-05 22:34:07,152 - INFO - Using device: cuda
+2025-11-05 22:35:43,458 - INFO - Using device: cuda
+2025-11-05 22:36:46,969 - INFO - Step 1: Retrieving context...
+2025-11-05 22:36:49,230 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 22:36:52,766 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-05 22:36:57,945 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-05 22:36:57,957 - INFO - Step 3: Generating answer...
+2025-11-05 22:37:02,696 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>
+2025-11-05 22:37:47,504 - INFO - Using device: cuda
+2025-11-05 22:38:03,390 - INFO - Step 1: Retrieving context...
+2025-11-05 22:38:05,571 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 22:38:09,155 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-05 22:38:14,240 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-05 22:38:14,250 - INFO - Step 3: Generating answer...
+2025-11-05 22:38:19,322 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>
+2025-11-05 22:41:53,500 - INFO - Using device: cuda
+2025-11-05 22:41:55,454 - INFO - Step 1: Retrieving context...
+2025-11-05 22:41:57,445 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 22:42:01,323 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-05 22:42:03,854 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-05 22:42:03,864 - INFO - Step 3: Generating answer...
+2025-11-05 22:42:08,570 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>
+2025-11-05 23:07:26,061 - INFO - Using device: cuda
+2025-11-05 23:09:30,989 - INFO - Using device: cuda
+2025-11-05 23:11:06,074 - INFO - Using device: cuda
+2025-11-05 23:11:12,920 - INFO - Step 1: Retrieving context...
+2025-11-05 23:11:15,306 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 23:11:19,650 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-05 23:11:25,212 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-05 23:11:25,223 - INFO - Step 3: Generating answer...
+2025-11-05 23:11:30,137 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>
+2025-11-05 23:12:29,449 - INFO - Using device: cuda
+2025-11-05 23:12:36,976 - INFO - Step 1: Retrieving context...
+2025-11-05 23:12:39,862 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-05 23:12:45,762 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-05 23:12:52,474 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-05 23:12:52,590 - INFO - Step 3: Generating answer...
+2025-11-05 23:13:29,943 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>
+2025-11-07 01:49:19,987 - INFO - --- Initializing RAG Pipeline ---
+2025-11-07 01:49:19,993 - ERROR - A critical error occurred in the RAG pipeline: Could not connect to Elasticsearch.
+2025-11-07 01:50:58,615 - INFO - --- Initializing RAG Pipeline ---
+2025-11-07 01:53:13,540 - INFO - --- Initializing RAG Pipeline ---
+2025-11-07 01:53:17,545 - INFO - Using device: cuda
+2025-11-07 01:53:17,545 - INFO - Step 1: Retrieving context...
+2025-11-07 01:53:28,202 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-07 01:53:36,495 - ERROR - Failed to load generation model 'Qwen/Qwen3-1.7B': CUDA out of memory. Tried to allocate 594.00 MiB. GPU 0 has a total capacity of 3.68 GiB of which 353.31 MiB is free. Including non-PyTorch memory, this process has 3.32 GiB memory in use. Of the allocated memory 3.21 GiB is allocated by PyTorch, and 15.12 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-11-07 01:53:36,495 - ERROR - A critical error occurred in the RAG pipeline: CUDA out of memory. Tried to allocate 594.00 MiB. GPU 0 has a total capacity of 3.68 GiB of which 353.31 MiB is free. Including non-PyTorch memory, this process has 3.32 GiB memory in use. Of the allocated memory 3.21 GiB is allocated by PyTorch, and 15.12 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-11-07 01:53:56,670 - INFO - --- Initializing RAG Pipeline ---
+2025-11-07 01:54:00,516 - INFO - Using device: cuda
+2025-11-07 01:54:00,516 - INFO - Step 1: Retrieving context...
+2025-11-07 01:54:05,423 - INFO - Loading generation model: Qwen/Qwen3-1.7B
+2025-11-07 01:54:07,847 - INFO - Loading Qwen model in 8-bit mode using bitsandbytes.
+2025-11-07 01:54:12,473 - INFO - Step 2: Formatting prompt with chat template...
+2025-11-07 01:54:12,482 - INFO - Step 3: Generating answer...
+2025-11-07 01:54:17,997 - INFO - Model thinking content captured (truncated to 300 chars): <think>
+</think>

@@ -1,0 +1,136 @@
+2025-11-06 00:57:41,136 - ERROR - An unexpected error occurred: InferenceClient.text_generation() got an unexpected keyword argument 'client_kwargs'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/app.py", line 208, in main
+    result = agent_executor.invoke({"input": args.query})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/chains/base.py", line 167, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 1605, in _call
+    next_step_output = self._take_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 1305, in _take_next_step
+    list(
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 1332, in _iter_next_step
+    output = self._action_agent.plan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 451, in plan
+    for chunk in self.runnable.stream(inputs, config={"callbacks": callbacks}):
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3467, in stream
+    yield from self.transform(iter([input]), config, **kwargs)
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3453, in transform
+    yield from self._transform_stream_with_config(
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 2283, in _transform_stream_with_config
+    chunk: Output = context.run(next, iterator)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3419, in _transform
+    yield from final_pipeline
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 1515, in transform
+    for ichunk in input:
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 5705, in transform
+    yield from self.bound.transform(
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 1533, in transform
+    yield from self.stream(final, config, **kwargs)
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 545, in stream
+    for chunk in self._stream(
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_huggingface/llms/huggingface_endpoint.py", line 369, in _stream
+    for response in self.client.text_generation(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: InferenceClient.text_generation() got an unexpected keyword argument 'client_kwargs'
+2025-11-06 00:59:20,812 - ERROR - An unexpected error occurred: generator raised StopIteration
+Traceback (most recent call last):
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_huggingface/llms/huggingface_endpoint.py", line 369, in _stream
+    for response in self.client.text_generation(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/huggingface_hub/inference/_client.py", line 2375, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/huggingface_hub/inference/_providers/__init__.py", line 196, in get_provider_helper
+    provider = next(iter(provider_mapping)).provider
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/agent.py", line 208, in main
+    result = agent_executor.invoke({"input": args.query})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/chains/base.py", line 167, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 1605, in _call
+    next_step_output = self._take_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 1305, in _take_next_step
+    list(
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 1332, in _iter_next_step
+    output = self._action_agent.plan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 451, in plan
+    for chunk in self.runnable.stream(inputs, config={"callbacks": callbacks}):
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3467, in stream
+    yield from self.transform(iter([input]), config, **kwargs)
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3453, in transform
+    yield from self._transform_stream_with_config(
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 2283, in _transform_stream_with_config
+    chunk: Output = context.run(next, iterator)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3419, in _transform
+    yield from final_pipeline
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 1515, in transform
+    for ichunk in input:
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 5705, in transform
+    yield from self.bound.transform(
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 1533, in transform
+    yield from self.stream(final, config, **kwargs)
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 545, in stream
+    for chunk in self._stream(
+RuntimeError: generator raised StopIteration
+2025-11-06 01:00:43,483 - ERROR - An unexpected error occurred: generator raised StopIteration
+Traceback (most recent call last):
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_huggingface/llms/huggingface_endpoint.py", line 369, in _stream
+    for response in self.client.text_generation(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/huggingface_hub/inference/_client.py", line 2375, in text_generation
+    provider_helper = get_provider_helper(self.provider, task="text-generation", model=model_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/huggingface_hub/inference/_providers/__init__.py", line 196, in get_provider_helper
+    provider = next(iter(provider_mapping)).provider
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/agent.py", line 209, in main
+    result = agent_executor.invoke({"input": args.query})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/chains/base.py", line 167, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 1605, in _call
+    next_step_output = self._take_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 1305, in _take_next_step
+    list(
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 1332, in _iter_next_step
+    output = self._action_agent.plan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_classic/agents/agent.py", line 451, in plan
+    for chunk in self.runnable.stream(inputs, config={"callbacks": callbacks}):
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3467, in stream
+    yield from self.transform(iter([input]), config, **kwargs)
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3453, in transform
+    yield from self._transform_stream_with_config(
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 2283, in _transform_stream_with_config
+    chunk: Output = context.run(next, iterator)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3419, in _transform
+    yield from final_pipeline
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 1515, in transform
+    for ichunk in input:
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 5705, in transform
+    yield from self.bound.transform(
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 1533, in transform
+    yield from self.stream(final, config, **kwargs)
+  File "/home/vivek/.local/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 545, in stream
+    for chunk in self._stream(
+RuntimeError: generator raised StopIteration

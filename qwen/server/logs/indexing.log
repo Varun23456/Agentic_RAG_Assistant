@@ -1,0 +1,72 @@
+2025-11-04 13:02:29,699 - INFO - --- Starting mode: INDEX ---
+2025-11-04 13:02:29,699 - INFO - Setting up Elasticsearch client at: http://localhost:9200
+2025-11-04 13:02:31,454 - INFO - Using device: cuda
+2025-11-04 13:02:31,454 - INFO - Loading tokenizer: BAAI/bge-base-en-v1.5
+2025-11-04 13:02:32,567 - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-11-04 13:02:33,384 - INFO - Embedding dimension for 'BAAI/bge-base-en-v1.5': 768
+2025-11-04 13:02:33,421 - INFO - Creating Elasticsearch index 'periodic-table-hybrid-search' with mapping.
+2025-11-04 13:02:34,132 - INFO - Starting to read chunks from: processed/chunks.jsonl
+2025-11-04 13:02:34,242 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:34,323 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:34,398 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:34,476 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:34,550 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:34,625 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:34,697 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:34,771 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:34,846 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:34,920 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:34,993 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,067 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,141 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,215 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,291 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,364 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,438 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,515 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,590 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,671 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,745 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (2048) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,802 - ERROR - Failed to process batch for Elasticsearch: The size of tensor a (1734) must match the size of tensor b (512) at non-singleton dimension 1
+2025-11-04 13:02:35,806 - INFO - --- Indexing complete ---
+2025-11-04 13:02:36,048 - INFO - Total documents in index 'periodic-table-hybrid-search': 0
+2025-11-04 13:03:07,971 - INFO - --- Starting mode: INDEX ---
+2025-11-04 13:03:07,971 - INFO - Setting up Elasticsearch client at: http://localhost:9200
+2025-11-04 13:03:08,017 - INFO - Using device: cuda
+2025-11-04 13:03:08,017 - INFO - Loading tokenizer: BAAI/bge-base-en-v1.5
+2025-11-04 13:03:09,673 - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-11-04 13:03:10,175 - INFO - Embedding dimension for 'BAAI/bge-base-en-v1.5': 768
+2025-11-04 13:03:10,197 - INFO - Index 'periodic-table-hybrid-search' already exists. Will add/update documents.
+2025-11-04 13:03:10,197 - INFO - Starting to read chunks from: processed/chunks.jsonl
+2025-11-04 13:04:23,600 - INFO - --- Indexing complete ---
+2025-11-04 13:04:23,711 - INFO - Total documents in index 'periodic-table-hybrid-search': 2185
+2025-11-05 20:57:59,986 - INFO - --- Starting mode: INDEX ---
+2025-11-05 20:57:59,986 - INFO - Setting up Elasticsearch client at: http://localhost:9200
+2025-11-05 20:58:00,010 - INFO - Using device: cuda
+2025-11-05 20:58:00,010 - INFO - Loading tokenizer: BAAI/bge-base-en-v1.5
+2025-11-05 20:58:00,828 - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-11-05 20:58:01,411 - INFO - Embedding dimension for 'BAAI/bge-base-en-v1.5': 768
+2025-11-05 20:58:01,414 - INFO - Index 'periodic-table-hybrid-search' already exists. Will add/update documents.
+2025-11-05 20:58:01,415 - INFO - Starting to read chunks from: processed/chunks.jsonl
+2025-11-05 20:58:05,098 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 20:58:08,316 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 20:58:11,568 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 20:58:14,838 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 20:58:18,059 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 20:58:21,312 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 20:58:24,533 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 20:58:27,763 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 20:58:30,984 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 20:58:34,220 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 20:58:37,441 - WARNING - Bulk indexing failed for 100 documents.
+2025-11-05 21:02:32,827 - INFO - --- Starting mode: INDEX ---
+2025-11-05 21:02:32,827 - INFO - Setting up Elasticsearch client at: http://localhost:9200
+2025-11-05 21:02:32,850 - INFO - Using device: cuda
+2025-11-05 21:02:32,850 - INFO - Loading tokenizer: BAAI/bge-base-en-v1.5
+2025-11-05 21:02:33,726 - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-11-05 21:02:34,310 - INFO - Embedding dimension for 'BAAI/bge-base-en-v1.5': 768
+2025-11-05 21:02:34,312 - INFO - Index 'periodic-table-hybrid-search' exists and --delete-existing specified. Deleting index.
+2025-11-05 21:02:34,364 - INFO - Recreating Elasticsearch index 'periodic-table-hybrid-search' with mapping.
+2025-11-05 21:02:34,437 - INFO - Starting to read chunks from: processed/chunks.jsonl
+2025-11-05 21:03:46,447 - INFO - --- Indexing complete ---
+2025-11-05 21:03:46,496 - INFO - Total documents in index 'periodic-table-hybrid-search': 2185

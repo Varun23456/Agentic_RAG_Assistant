@@ -1,0 +1,18 @@
+2025-11-06 00:57:40,830 - INFO - Setting up agent...
+2025-11-06 00:57:40,831 - INFO - Initializing LLM from Hugging Face Endpoint: mistralai/Mistral-7B-Instruct-v0.1
+2025-11-06 00:57:41,131 - INFO - Tools loaded: knowledge_retrieval, quiz_generator, pdf_generator, email_tool
+2025-11-06 00:57:41,133 - INFO - ReAct agent created.
+2025-11-06 00:57:41,133 - INFO - Agent Executor created.
+2025-11-06 00:57:41,133 - INFO - --- Executing query: Write a report on elements in periodic table, compile it to pdf, send an e-mail to vysishtya.karanam@students.iiit.ac.in ---
+2025-11-06 00:59:20,262 - INFO - Setting up agent...
+2025-11-06 00:59:20,262 - INFO - Initializing LLM from Hugging Face Endpoint: mistralai/Mistral-7B-Instruct-v0.1
+2025-11-06 00:59:20,484 - INFO - Tools loaded: knowledge_retrieval, quiz_generator, pdf_generator, email_tool
+2025-11-06 00:59:20,485 - INFO - ReAct agent created.
+2025-11-06 00:59:20,485 - INFO - Agent Executor created.
+2025-11-06 00:59:20,485 - INFO - --- Executing query: Write a report on elements in periodic table, compile it to pdf, send an e-mail to vysishtya.karanam@students.iiit.ac.in ---
+2025-11-06 01:00:42,950 - INFO - Setting up agent...
+2025-11-06 01:00:42,951 - INFO - Initializing LLM from Hugging Face Endpoint: mistralai/Mistral-7B-Instruct-v0.1
+2025-11-06 01:00:43,172 - INFO - Tools loaded: knowledge_retrieval, quiz_generator, pdf_generator, email_tool
+2025-11-06 01:00:43,173 - INFO - ReAct agent created.
+2025-11-06 01:00:43,173 - INFO - Agent Executor created.
+2025-11-06 01:00:43,173 - INFO - --- Executing query: Write a report on elements in periodic table, compile it to pdf, send an e-mail to vysishtya.karanam@students.iiit.ac.in ---

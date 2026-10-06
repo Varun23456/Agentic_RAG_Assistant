@@ -1,0 +1,417 @@
+2025-11-05 23:32:13,051 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: Generate a 5-question quiz on the topic of photosynthesis, save it as a PDF named photosynthesis_quiz.pdf, and email it to kavuri.hruday@research.iiit.ac.in with a short note saying Here is your requested quiz on photosynthesis.
+2025-11-05 23:32:16,718 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-05 23:32:23,239 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-06 16:29:18,920 - multitools - ERROR - email_tool SMTP error: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 520, in email_tool
+    server = smtplib.SMTP(smtp_server, smtp_port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 405, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2025-11-06 16:29:47,510 - multitools - ERROR - email_tool SMTP error: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 520, in email_tool
+    server = smtplib.SMTP(smtp_server, smtp_port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 405, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2025-11-06 16:33:53,315 - multitools - ERROR - email_tool SMTP error: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 520, in email_tool
+    server = smtplib.SMTP(smtp_server, smtp_port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 405, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2025-11-06 16:36:41,155 - multitools - INFO - email_tool: Email sent to saketh.vemula@research.iiit.ac.in
+2025-11-06 16:40:54,623 - multitools - INFO - email_tool: Email sent to saketh.vemula@resesarch.iiit.ac.in
+2025-11-06 16:44:10,673 - multitools - INFO - email_tool: Email sent to saketh.vemula@research.iiit.ac.in
+2025-11-06 16:45:32,839 - multitools - INFO - email_tool: Email sent to saketh.vemula@research.iiit.ac.in with attachment: tools.log
+2025-11-07 01:20:01,568 - multitools - ERROR - Failed to initialize retriever: No module named 'elasticsearch'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 59, in _init_retriever
+    from retrieval import Retriever
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/retrieval.py", line 17, in <module>
+    from elasticsearch import Elasticsearch
+ModuleNotFoundError: No module named 'elasticsearch'
+2025-11-07 01:20:01,569 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-07 01:20:35,851 - multitools - ERROR - Failed to initialize retriever: No module named 'elasticsearch'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 59, in _init_retriever
+    from retrieval import Retriever
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/retrieval.py", line 17, in <module>
+    from elasticsearch import Elasticsearch
+ModuleNotFoundError: No module named 'elasticsearch'
+2025-11-07 01:20:35,852 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-07 01:22:23,133 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 01:22:23,585 - multitools - ERROR - Failed to initialize text generation model: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2025-11-07 01:22:23,602 - multitools - ERROR - quiz_generator: Text generation model not initialized.
+2025-11-07 01:22:47,150 - multitools - ERROR - pdf_generator exception: FPDF.cell() got an unexpected keyword argument 'new_x'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 402, in pdf_generator
+    pdf.cell(0, 10, "Educational Content", align="C", new_x="LMARGIN", new_y="NEXT")
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/fpdf.py", line 150, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: FPDF.cell() got an unexpected keyword argument 'new_x'
+2025-11-07 01:22:47,151 - multitools - WARNING - email_tool: Attachment file not found: periodic_table_quiz.pdf
+2025-11-07 01:22:51,063 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 01:22:58,347 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 01:25:15,603 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 01:25:19,762 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 01:27:34,230 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 01:27:37,173 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 01:28:34,658 - multitools - ERROR - quiz_generator exception: cannot access local variable 'outputs' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 318, in quiz_generator
+    quiz_content = tokenizer.decode(outputs[0], skip_special_tokens=True)
+                                    ^^^^^^^
+UnboundLocalError: cannot access local variable 'outputs' where it is not associated with a value
+2025-11-07 01:44:29,471 - multitools - ERROR - Failed to initialize retriever: No module named 'elasticsearch'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 59, in _init_retriever
+    from retrieval import Retriever
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/retrieval.py", line 17, in <module>
+    from elasticsearch import Elasticsearch
+ModuleNotFoundError: No module named 'elasticsearch'
+2025-11-07 01:44:29,472 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-07 01:47:14,373 - multitools - ERROR - Failed to initialize retriever: Could not connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 60, in _init_retriever
+    _retriever = Retriever(log_dir=Path("logs"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/retrieval.py", line 83, in __init__
+    raise ConnectionError("Could not connect to Elasticsearch.")
+ConnectionError: Could not connect to Elasticsearch.
+2025-11-07 01:47:14,381 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-07 01:54:51,921 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: introductory periodic table topics for 8th grade
+2025-11-07 01:54:55,605 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 01:54:58,311 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 01:55:59,557 - multitools - INFO - quiz_generator: Successfully generated quiz (833 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 01:55:59,557 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 01:59:51,962 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: periodic table basics for 8th grade
+2025-11-07 02:04:01,620 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: **Key Learning Topic:** Introductory concepts of the periodic table for 8th grade.
+
+**Query:** How do the properties of elements change across a period and down a group?
+2025-11-07 02:04:04,129 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 02:04:08,450 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:05:01,544 - multitools - INFO - quiz_generator: Successfully generated quiz (2843 characters) for constraints: 8th grade, 20 minutes, introductory periodic table topics
+2025-11-07 02:05:01,547 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:05:01,596 - multitools - ERROR - pdf_generator exception: FPDF.cell() got an unexpected keyword argument 'new_x'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 399, in pdf_generator
+    pdf.cell(0, 10, "Educational Content", align="C", new_x="LMARGIN", new_y="NEXT")
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/fpdf.py", line 150, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: FPDF.cell() got an unexpected keyword argument 'new_x'
+2025-11-07 02:05:01,611 - multitools - WARNING - email_tool: Attachment file not found: {"status": "error", "message": "Error: PDF generation failed. Check logs for details."}
+2025-11-07 02:07:06,746 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: **Key Learning Topic:** Introductory concepts of the periodic table for an 8th-grade level.
+
+**Query:** What does an element's position in a group and period reveal about its properties?
+2025-11-07 02:07:09,367 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 02:07:14,138 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:08:17,923 - multitools - INFO - quiz_generator: Successfully generated quiz (3982 characters) for constraints: 8th grade, 20 minutes, introductory periodic table topics
+2025-11-07 02:08:17,924 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:08:17,964 - multitools - INFO - pdf_generator: Successfully generated PDF at /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_quiz.pdf (3175 bytes)
+2025-11-07 02:08:17,965 - multitools - WARNING - email_tool: Attachment file not found: {"status": "success", "result": "/home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_quiz.pdf", "file_size": 3175}
+2025-11-07 02:09:45,264 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachment: periodic_table_quiz.pdf
+2025-11-07 02:14:11,439 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 02:14:14,674 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 02:14:22,508 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:15:23,152 - multitools - INFO - quiz_generator: Successfully generated quiz (836 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 02:15:23,152 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:15:23,186 - multitools - ERROR - pdf_generator exception: Not enough horizontal space to render a single character
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 408, in pdf_generator
+    pdf.multi_cell(0, 5, line)
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/fpdf.py", line 242, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/deprecation.py", line 32, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/fpdf.py", line 4550, in multi_cell
+    text_line = multi_line_break.get_line()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/line_break.py", line 792, in get_line
+    raise FPDFException(
+fpdf.errors.FPDFException: Not enough horizontal space to render a single character
+2025-11-07 02:17:25,638 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 02:17:28,400 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 02:17:32,138 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:18:28,163 - multitools - INFO - quiz_generator: Successfully generated quiz (919 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 02:18:28,163 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:19:49,360 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 02:19:52,129 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 02:19:56,908 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:20:54,039 - multitools - INFO - quiz_generator: Successfully generated quiz (1844 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 02:20:54,039 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:20:54,061 - multitools - WARNING - Skipping problematic line: h element's identity.*... (Not enough horizontal space to render a single character)
+2025-11-07 02:20:54,063 - multitools - WARNING - Skipping problematic line: so on.*... (Not enough horizontal space to render a single character)
+2025-11-07 02:20:54,064 - multitools - WARNING - Skipping problematic line: efines the element's identity.*... (Not enough horizontal space to render a single character)
+2025-11-07 02:20:54,066 - multitools - WARNING - Skipping problematic line: 8.*... (Not enough horizontal space to render a single character)
+2025-11-07 02:20:54,068 - multitools - WARNING - Skipping problematic line: y and determines chemical behavior more accurately... (Not enough horizontal space to render a single character)
+2025-11-07 02:20:54,069 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table.pdf
+2025-11-07 02:20:57,752 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachment: periodic_table.pdf
+2025-11-07 15:48:52,578 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 15:48:55,800 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 15:49:02,767 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:49:48,614 - multitools - INFO - quiz_generator: Successfully generated quiz (1558 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 15:49:48,614 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:49:48,635 - multitools - WARNING - Skipping problematic line: dents, focusing on introductory periodic table fac... (Not enough horizontal space to render a single character)
+2025-11-07 15:49:48,641 - multitools - WARNING - Skipping problematic line: ntext.", "length": 1558}... (Not enough horizontal space to render a single character)
+2025-11-07 15:49:48,643 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table.pdf
+2025-11-07 15:49:53,419 - multitools - INFO - email_tool: Email sent to vysishtya.karanam@students.iiit.ac.in with attachment: periodic_table.pdf
+2025-11-07 15:53:28,956 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 15:53:31,913 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 15:53:34,301 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:54:35,547 - multitools - INFO - quiz_generator: Successfully generated quiz (517 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 15:54:35,547 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:54:35,570 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table.pdf
+2025-11-07 15:54:39,987 - multitools - INFO - email_tool: Email sent to vysishtya.karanam@students.iiit.ac.in with attachment: periodic_table.pdf
+2025-11-07 15:55:18,007 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 15:55:20,263 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 15:55:23,315 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:56:24,435 - multitools - INFO - quiz_generator: Successfully generated quiz (1324 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 15:56:24,435 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:56:24,462 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table.pdf
+2025-11-07 15:56:29,824 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachment: periodic_table.pdf
+2025-11-07 16:06:24,551 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:06:27,238 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 16:06:32,727 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:07:23,291 - multitools - INFO - quiz_generator: Successfully generated quiz (1095 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 16:07:23,292 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:07:23,316 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d-block_elements.pdf
+2025-11-07 16:07:29,251 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachment: d-block_elements.pdf
+2025-11-07 16:09:17,531 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:09:20,608 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 16:09:25,888 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:10:32,778 - multitools - INFO - quiz_generator: Successfully generated quiz (780 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 16:10:32,787 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:10:33,034 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d-block_elements.pdf
+2025-11-07 16:16:25,513 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:16:27,706 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 16:16:32,635 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:17:58,444 - multitools - INFO - report_generator: Successfully generated report (4993 characters) for topic: d-block elements
+2025-11-07 16:17:58,444 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:24:06,942 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:24:09,185 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 16:24:14,340 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:25:51,528 - multitools - INFO - report_generator: Successfully generated report (5006 characters) for topic: d-block elements
+2025-11-07 16:25:51,528 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:25:51,574 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_presentation.pptx
+2025-11-07 16:25:57,410 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachments: d_block_elements_presentation.pptx
+2025-11-07 16:27:17,964 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:27:20,684 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 16:27:26,349 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:28:30,625 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:28:30,654 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_quiz.pdf
+2025-11-07 16:28:35,537 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachments: d_block_elements_quiz.pdf
+2025-11-07 16:29:30,029 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:29:31,875 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 16:29:34,604 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:31:11,485 - multitools - INFO - report_generator: Successfully generated report (5233 characters) for topic: d-block elements
+2025-11-07 16:31:11,485 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:31:11,531 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_report.pdf
+2025-11-07 16:31:16,481 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachments: d_block_elements_report.pdf
+2025-11-07 22:41:54,298 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 22:41:57,453 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 22:42:02,959 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 22:43:06,632 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 22:43:06,681 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_quiz.pdf
+2025-11-07 22:43:12,061 - multitools - INFO - email_tool: Email sent to usegputhala@gmail.com with attachments: d_block_elements_quiz.pdf
+2025-11-07 22:44:34,243 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 22:44:36,990 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 22:44:40,047 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 22:46:11,966 - multitools - INFO - report_generator: Successfully generated report (4677 characters) for topic: d-block elements
+2025-11-07 22:46:11,966 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 22:46:12,006 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_presentation.pptx
+2025-11-07 22:46:16,886 - multitools - INFO - email_tool: Email sent to usegputhala@gmail.com with attachments: d_block_elements_presentation.pptx
+2025-11-11 00:45:58,557 - multitools - ERROR - Failed to initialize retriever: Could not connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/multitools.py", line 72, in _init_retriever
+    _retriever = Retriever(log_dir=Path("logs"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/retrieval.py", line 83, in __init__
+    raise ConnectionError("Could not connect to Elasticsearch.")
+ConnectionError: Could not connect to Elasticsearch.
+2025-11-11 00:45:58,558 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-11 00:46:00,493 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 00:46:05,315 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 00:46:56,127 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: berellium
+2025-11-11 00:46:59,105 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 00:47:06,666 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 00:49:03,251 - multitools - INFO - report_generator: Successfully generated report (4873 characters) for topic: berellium
+2025-11-11 00:49:03,255 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 00:49:03,398 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/generated_documents/berellium_report.pdf
+2025-11-11 00:49:06,115 - multitools - ERROR - email_tool SMTP error: (534, b'5.7.9 Please log in with your web browser and then try again. For more\n5.7.9 information, go to\n5.7.9  https://support.google.com/mail/?p=WebLoginRequired d9443c01a7336-29650c5f94fsm155673335ad.40 - gsmtp')
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/multitools.py", line 565, in email_tool
+    server.login(sender_email, sender_password)
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/smtplib.py", line 750, in login
+    raise last_exception
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.9 Please log in with your web browser and then try again. For more\n5.7.9 information, go to\n5.7.9  https://support.google.com/mail/?p=WebLoginRequired d9443c01a7336-29650c5f94fsm155673335ad.40 - gsmtp')
+2025-11-11 00:51:38,036 - multitools - ERROR - email_tool: SMTP authentication failed.
+2025-11-11 00:53:12,059 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-11 00:53:13,894 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 00:53:18,654 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 00:54:57,011 - multitools - INFO - report_generator: Successfully generated report (4551 characters) for topic: f-block elements
+2025-11-11 00:54:57,011 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 00:54:57,061 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/generated_documents/f_block_elements_report.pdf
+2025-11-11 00:56:23,452 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table introductory topics
+2025-11-11 00:56:23,458 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 00:57:25,621 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 00:57:25,641 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/generated_documents/periodic_table_introductory_topics_quiz.pdf
+2025-11-11 01:18:04,775 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: elements of periodic tables, their atomic and mass numbers
+2025-11-11 01:18:06,855 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 01:18:11,018 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 01:19:10,327 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 01:19:10,358 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/elements_of_periodic_tables__their_atomic_and_mass_numbers_quiz.pdf
+2025-11-11 01:19:12,856 - multitools - ERROR - email_tool SMTP error: (534, b'5.7.9 Please log in with your web browser and then try again. For more\n5.7.9 information, go to\n5.7.9  https://support.google.com/mail/?p=WebLoginRequired d9443c01a7336-29651c740a9sm154625485ad.53 - gsmtp')
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/multitools.py", line 568, in email_tool
+    server.login(sender_email, sender_password)
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/smtplib.py", line 750, in login
+    raise last_exception
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.9 Please log in with your web browser and then try again. For more\n5.7.9 information, go to\n5.7.9  https://support.google.com/mail/?p=WebLoginRequired d9443c01a7336-29651c740a9sm154625485ad.53 - gsmtp')
+2025-11-11 01:26:53,713 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: beryllium
+2025-11-11 01:26:55,966 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 01:27:03,248 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 01:28:14,695 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 01:32:31,394 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-11 01:32:33,466 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 01:32:39,815 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 01:34:20,151 - multitools - INFO - report_generator: Successfully generated report (4942 characters) for topic: f-block elements
+2025-11-11 01:34:20,152 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 01:34:20,382 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/f_block_elements_report.pdf
+2025-11-11 15:52:50,729 - multitools - ERROR - email_tool: SMTP authentication failed.
+2025-11-11 15:55:51,688 - multitools - ERROR - Failed to initialize retriever: Could not connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/multitools.py", line 72, in _init_retriever
+    _retriever = Retriever(log_dir=Path("logs"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/retrieval.py", line 83, in __init__
+    raise ConnectionError("Could not connect to Elasticsearch.")
+ConnectionError: Could not connect to Elasticsearch.
+2025-11-11 15:55:51,689 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-11 15:55:55,293 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 15:56:12,558 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 15:57:21,546 - multitools - INFO - knowledge_retrieval: Successfully retrieved 3 chunks for query: questions that can be asked from d block elements
+2025-11-11 15:57:28,688 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 15:57:34,531 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 15:59:22,582 - multitools - INFO - report_generator: Successfully generated report (6010 characters) for topic: questions that can be asked from d block elements
+2025-11-11 15:59:22,583 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 15:59:22,644 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/questions_that_can_be_asked_from_d_block_elements_report.pdf
+2025-11-11 21:56:29,377 - multitools - ERROR - email_tool: SMTP authentication failed.
+2025-11-11 21:57:09,392 - multitools - ERROR - email_tool: SMTP authentication failed.
+2025-11-11 21:58:21,870 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com
+2025-11-11 22:03:41,964 - multitools - ERROR - Failed to initialize retriever: Could not connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/multitools.py", line 72, in _init_retriever
+    _retriever = Retriever(log_dir=Path("logs"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/retrieval.py", line 83, in __init__
+    raise ConnectionError("Could not connect to Elasticsearch.")
+ConnectionError: Could not connect to Elasticsearch.
+2025-11-11 22:03:41,965 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-11 22:03:45,033 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 22:03:50,912 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 22:04:59,619 - multitools - INFO - report_generator: Successfully generated report (3281 characters) for topic: d and f block elements
+2025-11-11 22:04:59,622 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 22:06:02,301 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d and f block elements
+2025-11-11 22:06:05,793 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 22:06:12,412 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 22:08:05,019 - multitools - INFO - report_generator: Successfully generated report (6074 characters) for topic: d and f block elements
+2025-11-11 22:08:05,027 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 22:08:05,083 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/d_and_f_block_elements_presentation.pptx
+2025-11-11 22:08:11,083 - multitools - INFO - email_tool: Email sent to venkatajahnavivenkamsetty@gmail.com with attachments: d_and_f_block_elements_presentation.pptx
+2025-11-11 22:58:58,535 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: dblock elements
+2025-11-11 22:59:00,996 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-11 22:59:10,039 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 23:00:21,417 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-11 23:00:21,456 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/dblock_elements_quiz.pdf
+2025-11-15 23:59:14,815 - multitools - ERROR - Failed to initialize retriever: Could not connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/multitools.py", line 72, in _init_retriever
+    _retriever = Retriever(log_dir=Path("logs"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/server/retrieval.py", line 83, in __init__
+    raise ConnectionError("Could not connect to Elasticsearch.")
+ConnectionError: Could not connect to Elasticsearch.
+2025-11-15 23:59:14,816 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-15 23:59:26,618 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-15 23:59:31,379 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:00:09,124 - multitools - INFO - knowledge_retrieval: Successfully retrieved 3 chunks for query: f and d block elements
+2025-11-16 00:00:24,413 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-16 00:00:29,897 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:01:55,456 - multitools - INFO - knowledge_retrieval: Successfully retrieved 3 chunks for query: f and d block elements
+2025-11-16 00:02:09,506 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-16 00:02:12,255 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:03:15,551 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:03:15,600 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/f_and_d_block_elements_multi.pdf
+2025-11-16 00:04:31,901 - multitools - INFO - knowledge_retrieval: Successfully retrieved 3 chunks for query: f and d block elements
+2025-11-16 00:04:47,605 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-16 00:04:52,457 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:06:00,885 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:06:00,943 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/f_and_d_block_elements_multi.pdf
+2025-11-16 00:07:24,891 - multitools - INFO - knowledge_retrieval: Successfully retrieved 3 chunks for query: f and d block elements
+2025-11-16 00:07:44,786 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:08:59,664 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:08:59,735 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/f_and_d_block_elements_multi.pdf
+2025-11-16 00:13:57,978 - multitools - INFO - knowledge_retrieval: Successfully retrieved 3 chunks for query: d block and f block elements
+2025-11-16 00:14:11,321 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-16 00:14:14,619 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:15:23,397 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:15:23,618 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/d_block_and_f_block_elements_multi.pdf
+2025-11-16 00:17:30,925 - multitools - INFO - knowledge_retrieval: Successfully retrieved 3 chunks for query: d block and f block elements
+2025-11-16 00:17:32,971 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-16 00:17:37,938 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:18:29,941 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:18:29,978 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/d_block_and_f_block_elements_quiz.pdf
+2025-11-16 00:28:15,258 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 00:28:29,974 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-16 00:28:33,652 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:29:36,169 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:29:36,221 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 00:31:14,536 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 00:31:29,173 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-16 00:31:34,427 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:32:28,416 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:32:28,473 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 00:39:38,529 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: the periodic table
+2025-11-16 00:39:48,535 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:40:56,392 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-16 00:40:56,443 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/the_periodic_table_multi_document.pdf
+2025-11-16 16:58:29,703 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 16:58:40,379 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/qwen/generated_documents/periodic_table_multi_document.pdf

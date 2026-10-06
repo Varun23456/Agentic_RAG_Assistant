@@ -1,0 +1,718 @@
+2025-11-05 23:32:13,051 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: Generate a 5-question quiz on the topic of photosynthesis, save it as a PDF named photosynthesis_quiz.pdf, and email it to kavuri.hruday@research.iiit.ac.in with a short note saying Here is your requested quiz on photosynthesis.
+2025-11-05 23:32:16,718 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-05 23:32:23,239 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-06 16:29:18,920 - multitools - ERROR - email_tool SMTP error: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 520, in email_tool
+    server = smtplib.SMTP(smtp_server, smtp_port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 405, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2025-11-06 16:29:47,510 - multitools - ERROR - email_tool SMTP error: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 520, in email_tool
+    server = smtplib.SMTP(smtp_server, smtp_port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 405, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2025-11-06 16:33:53,315 - multitools - ERROR - email_tool SMTP error: Connection unexpectedly closed
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 520, in email_tool
+    server = smtplib.SMTP(smtp_server, smtp_port)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/smtplib.py", line 405, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2025-11-06 16:36:41,155 - multitools - INFO - email_tool: Email sent to saketh.vemula@research.iiit.ac.in
+2025-11-06 16:40:54,623 - multitools - INFO - email_tool: Email sent to saketh.vemula@resesarch.iiit.ac.in
+2025-11-06 16:44:10,673 - multitools - INFO - email_tool: Email sent to saketh.vemula@research.iiit.ac.in
+2025-11-06 16:45:32,839 - multitools - INFO - email_tool: Email sent to saketh.vemula@research.iiit.ac.in with attachment: tools.log
+2025-11-07 01:20:01,568 - multitools - ERROR - Failed to initialize retriever: No module named 'elasticsearch'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 59, in _init_retriever
+    from retrieval import Retriever
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/retrieval.py", line 17, in <module>
+    from elasticsearch import Elasticsearch
+ModuleNotFoundError: No module named 'elasticsearch'
+2025-11-07 01:20:01,569 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-07 01:20:35,851 - multitools - ERROR - Failed to initialize retriever: No module named 'elasticsearch'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 59, in _init_retriever
+    from retrieval import Retriever
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/retrieval.py", line 17, in <module>
+    from elasticsearch import Elasticsearch
+ModuleNotFoundError: No module named 'elasticsearch'
+2025-11-07 01:20:35,852 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-07 01:22:23,133 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 01:22:23,585 - multitools - ERROR - Failed to initialize text generation model: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2025-11-07 01:22:23,602 - multitools - ERROR - quiz_generator: Text generation model not initialized.
+2025-11-07 01:22:47,150 - multitools - ERROR - pdf_generator exception: FPDF.cell() got an unexpected keyword argument 'new_x'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 402, in pdf_generator
+    pdf.cell(0, 10, "Educational Content", align="C", new_x="LMARGIN", new_y="NEXT")
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/fpdf.py", line 150, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: FPDF.cell() got an unexpected keyword argument 'new_x'
+2025-11-07 01:22:47,151 - multitools - WARNING - email_tool: Attachment file not found: periodic_table_quiz.pdf
+2025-11-07 01:22:51,063 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 01:22:58,347 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 01:25:15,603 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 01:25:19,762 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 01:27:34,230 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 01:27:37,173 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 01:28:34,658 - multitools - ERROR - quiz_generator exception: cannot access local variable 'outputs' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 318, in quiz_generator
+    quiz_content = tokenizer.decode(outputs[0], skip_special_tokens=True)
+                                    ^^^^^^^
+UnboundLocalError: cannot access local variable 'outputs' where it is not associated with a value
+2025-11-07 01:44:29,471 - multitools - ERROR - Failed to initialize retriever: No module named 'elasticsearch'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 59, in _init_retriever
+    from retrieval import Retriever
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/retrieval.py", line 17, in <module>
+    from elasticsearch import Elasticsearch
+ModuleNotFoundError: No module named 'elasticsearch'
+2025-11-07 01:44:29,472 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-07 01:47:14,373 - multitools - ERROR - Failed to initialize retriever: Could not connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 60, in _init_retriever
+    _retriever = Retriever(log_dir=Path("logs"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/retrieval.py", line 83, in __init__
+    raise ConnectionError("Could not connect to Elasticsearch.")
+ConnectionError: Could not connect to Elasticsearch.
+2025-11-07 01:47:14,381 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-07 01:54:51,921 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: introductory periodic table topics for 8th grade
+2025-11-07 01:54:55,605 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 01:54:58,311 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 01:55:59,557 - multitools - INFO - quiz_generator: Successfully generated quiz (833 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 01:55:59,557 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 01:59:51,962 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: periodic table basics for 8th grade
+2025-11-07 02:04:01,620 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: **Key Learning Topic:** Introductory concepts of the periodic table for 8th grade.
+
+**Query:** How do the properties of elements change across a period and down a group?
+2025-11-07 02:04:04,129 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 02:04:08,450 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:05:01,544 - multitools - INFO - quiz_generator: Successfully generated quiz (2843 characters) for constraints: 8th grade, 20 minutes, introductory periodic table topics
+2025-11-07 02:05:01,547 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:05:01,596 - multitools - ERROR - pdf_generator exception: FPDF.cell() got an unexpected keyword argument 'new_x'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 399, in pdf_generator
+    pdf.cell(0, 10, "Educational Content", align="C", new_x="LMARGIN", new_y="NEXT")
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/fpdf.py", line 150, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: FPDF.cell() got an unexpected keyword argument 'new_x'
+2025-11-07 02:05:01,611 - multitools - WARNING - email_tool: Attachment file not found: {"status": "error", "message": "Error: PDF generation failed. Check logs for details."}
+2025-11-07 02:07:06,746 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: **Key Learning Topic:** Introductory concepts of the periodic table for an 8th-grade level.
+
+**Query:** What does an element's position in a group and period reveal about its properties?
+2025-11-07 02:07:09,367 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 02:07:14,138 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:08:17,923 - multitools - INFO - quiz_generator: Successfully generated quiz (3982 characters) for constraints: 8th grade, 20 minutes, introductory periodic table topics
+2025-11-07 02:08:17,924 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:08:17,964 - multitools - INFO - pdf_generator: Successfully generated PDF at /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_quiz.pdf (3175 bytes)
+2025-11-07 02:08:17,965 - multitools - WARNING - email_tool: Attachment file not found: {"status": "success", "result": "/home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_quiz.pdf", "file_size": 3175}
+2025-11-07 02:09:45,264 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachment: periodic_table_quiz.pdf
+2025-11-07 02:14:11,439 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 02:14:14,674 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 02:14:22,508 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:15:23,152 - multitools - INFO - quiz_generator: Successfully generated quiz (836 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 02:15:23,152 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:15:23,186 - multitools - ERROR - pdf_generator exception: Not enough horizontal space to render a single character
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/multitools.py", line 408, in pdf_generator
+    pdf.multi_cell(0, 5, line)
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/fpdf.py", line 242, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/deprecation.py", line 32, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/fpdf.py", line 4550, in multi_cell
+    text_line = multi_line_break.get_line()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/line_break.py", line 792, in get_line
+    raise FPDFException(
+fpdf.errors.FPDFException: Not enough horizontal space to render a single character
+2025-11-07 02:17:25,638 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 02:17:28,400 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 02:17:32,138 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:18:28,163 - multitools - INFO - quiz_generator: Successfully generated quiz (919 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 02:18:28,163 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:19:49,360 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 02:19:52,129 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 02:19:56,908 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:20:54,039 - multitools - INFO - quiz_generator: Successfully generated quiz (1844 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 02:20:54,039 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 02:20:54,061 - multitools - WARNING - Skipping problematic line: h element's identity.*... (Not enough horizontal space to render a single character)
+2025-11-07 02:20:54,063 - multitools - WARNING - Skipping problematic line: so on.*... (Not enough horizontal space to render a single character)
+2025-11-07 02:20:54,064 - multitools - WARNING - Skipping problematic line: efines the element's identity.*... (Not enough horizontal space to render a single character)
+2025-11-07 02:20:54,066 - multitools - WARNING - Skipping problematic line: 8.*... (Not enough horizontal space to render a single character)
+2025-11-07 02:20:54,068 - multitools - WARNING - Skipping problematic line: y and determines chemical behavior more accurately... (Not enough horizontal space to render a single character)
+2025-11-07 02:20:54,069 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table.pdf
+2025-11-07 02:20:57,752 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachment: periodic_table.pdf
+2025-11-07 15:48:52,578 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 15:48:55,800 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 15:49:02,767 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:49:48,614 - multitools - INFO - quiz_generator: Successfully generated quiz (1558 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 15:49:48,614 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:49:48,635 - multitools - WARNING - Skipping problematic line: dents, focusing on introductory periodic table fac... (Not enough horizontal space to render a single character)
+2025-11-07 15:49:48,641 - multitools - WARNING - Skipping problematic line: ntext.", "length": 1558}... (Not enough horizontal space to render a single character)
+2025-11-07 15:49:48,643 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table.pdf
+2025-11-07 15:49:53,419 - multitools - INFO - email_tool: Email sent to vysishtya.karanam@students.iiit.ac.in with attachment: periodic_table.pdf
+2025-11-07 15:53:28,956 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 15:53:31,913 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 15:53:34,301 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:54:35,547 - multitools - INFO - quiz_generator: Successfully generated quiz (517 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 15:54:35,547 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:54:35,570 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table.pdf
+2025-11-07 15:54:39,987 - multitools - INFO - email_tool: Email sent to vysishtya.karanam@students.iiit.ac.in with attachment: periodic_table.pdf
+2025-11-07 15:55:18,007 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-07 15:55:20,263 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 15:55:23,315 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:56:24,435 - multitools - INFO - quiz_generator: Successfully generated quiz (1324 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 15:56:24,435 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 15:56:24,462 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table.pdf
+2025-11-07 15:56:29,824 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachment: periodic_table.pdf
+2025-11-07 16:06:24,551 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:06:27,238 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 16:06:32,727 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:07:23,291 - multitools - INFO - quiz_generator: Successfully generated quiz (1095 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 16:07:23,292 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:07:23,316 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d-block_elements.pdf
+2025-11-07 16:07:29,251 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachment: d-block_elements.pdf
+2025-11-07 16:09:17,531 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:09:20,608 - multitools - INFO - Loading quiz generation model (Qwen) in 8-bit mode using bitsandbytes.
+2025-11-07 16:09:25,888 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:10:32,778 - multitools - INFO - quiz_generator: Successfully generated quiz (780 characters) for constraints: 8th grade, 20 minutes, introductory topics
+2025-11-07 16:10:32,787 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:10:33,034 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d-block_elements.pdf
+2025-11-07 16:16:25,513 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:16:27,706 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 16:16:32,635 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:17:58,444 - multitools - INFO - report_generator: Successfully generated report (4993 characters) for topic: d-block elements
+2025-11-07 16:17:58,444 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:24:06,942 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:24:09,185 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 16:24:14,340 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:25:51,528 - multitools - INFO - report_generator: Successfully generated report (5006 characters) for topic: d-block elements
+2025-11-07 16:25:51,528 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:25:51,574 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_presentation.pptx
+2025-11-07 16:25:57,410 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachments: d_block_elements_presentation.pptx
+2025-11-07 16:27:17,964 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:27:20,684 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 16:27:26,349 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:28:30,625 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:28:30,654 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_quiz.pdf
+2025-11-07 16:28:35,537 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachments: d_block_elements_quiz.pdf
+2025-11-07 16:29:30,029 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 16:29:31,875 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 16:29:34,604 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:31:11,485 - multitools - INFO - report_generator: Successfully generated report (5233 characters) for topic: d-block elements
+2025-11-07 16:31:11,485 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 16:31:11,531 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_report.pdf
+2025-11-07 16:31:16,481 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachments: d_block_elements_report.pdf
+2025-11-07 22:41:54,298 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 22:41:57,453 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 22:42:02,959 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 22:43:06,632 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 22:43:06,681 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_quiz.pdf
+2025-11-07 22:43:12,061 - multitools - INFO - email_tool: Email sent to usegputhala@gmail.com with attachments: d_block_elements_quiz.pdf
+2025-11-07 22:44:34,243 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-07 22:44:36,990 - multitools - INFO - Loading text generation model (Qwen) in 8-bit mode.
+2025-11-07 22:44:40,047 - multitools - WARNING - Failed to move text gen model to cuda: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 22:46:11,966 - multitools - INFO - report_generator: Successfully generated report (4677 characters) for topic: d-block elements
+2025-11-07 22:46:11,966 - multitools - WARNING - Failed to move text gen model to cpu: `.to` is not supported for `8-bit` bitsandbytes models. Please use the model as it is, since the model has already been set to the correct devices and casted to the correct `dtype`.
+2025-11-07 22:46:12,006 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_presentation.pptx
+2025-11-07 22:46:16,886 - multitools - INFO - email_tool: Email sent to usegputhala@gmail.com with attachments: d_block_elements_presentation.pptx
+2025-11-11 22:52:18,376 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table of elements
+2025-11-11 22:52:18,379 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-11 22:52:18,379 - multitools - INFO - report_generator: Sending request to Gemini API for topic: periodic table of elements
+2025-11-11 22:52:31,607 - multitools - INFO - report_generator: Successfully generated report (5279 characters) for topic: periodic table of elements
+2025-11-11 22:52:31,637 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/generated_documents/periodic_table_of_elements_report.pdf
+2025-11-11 22:52:34,963 - multitools - ERROR - email_tool SMTP error: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-bbf167e28basm179217a12.24 - gsmtp')
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/multitools.py", line 552, in email_tool
+    server.login(sender_email, sender_password)
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/smtplib.py", line 750, in login
+    raise last_exception
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-bbf167e28basm179217a12.24 - gsmtp')
+2025-11-11 22:53:29,231 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table of elements
+2025-11-11 22:53:29,233 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-11 22:53:29,233 - multitools - INFO - report_generator: Sending request to Gemini API for topic: periodic table of elements
+2025-11-11 22:53:39,142 - multitools - INFO - report_generator: Successfully generated report (4980 characters) for topic: periodic table of elements
+2025-11-11 22:53:39,169 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/generated_documents/periodic_table_of_elements_report.pdf
+2025-11-11 22:53:43,533 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachments: periodic_table_of_elements_report.pdf
+2025-11-16 00:45:55,168 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 00:45:55,173 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 00:45:55,173 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-16 00:46:04,993 - multitools - INFO - quiz_generator: Successfully generated quiz (2019 characters) for constraints: 8th grade, 20 minutes
+2025-11-16 00:46:05,014 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/generated_documents/periodic_table_quiz.pdf
+2025-11-16 00:49:09,691 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 00:49:19,577 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 00:49:19,577 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-16 00:49:28,864 - multitools - INFO - quiz_generator: Successfully generated quiz (1730 characters) for constraints: 8th grade, 20 minutes
+2025-11-16 00:49:28,894 - multitools - INFO - ✅ PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 00:52:09,087 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 00:52:18,284 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 00:52:18,284 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-16 00:52:26,425 - multitools - INFO - quiz_generator: Successfully generated quiz (2021 characters) for constraints: 8th grade, 20 minutes
+2025-11-16 00:52:26,427 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 00:52:26,462 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 01:00:33,323 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table introductory topics
+2025-11-16 01:00:33,329 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 01:00:33,329 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-16 01:00:42,215 - multitools - INFO - quiz_generator: Successfully generated quiz (1763 characters) for constraints: 8th grade, 20 minutes
+2025-11-16 01:00:42,217 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 01:00:42,230 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_introductory_topics_multi_document.pdf
+2025-11-16 01:02:11,002 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table introductory topics
+2025-11-16 01:02:11,005 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-16 01:02:19,164 - multitools - INFO - quiz_generator: Successfully generated quiz (1885 characters) for constraints: 8th grade, 20 minutes
+2025-11-16 01:02:29,444 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 01:02:29,481 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_introductory_topics_multi_document.pdf
+2025-11-16 01:55:42,103 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: atomic number in periodic table
+2025-11-16 01:55:50,804 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 01:55:50,804 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-16 01:56:01,798 - multitools - INFO - quiz_generator: Successfully generated quiz (2137 characters) for constraints: 8th grade, 20 minutes
+2025-11-16 01:56:01,800 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 01:56:01,828 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/atomic_number_in_periodic_table_multi_document.pdf
+2025-11-16 01:58:05,582 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: atomic number in periodic table
+2025-11-16 01:58:13,618 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 01:58:13,618 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 12th grader, 25 minutes
+2025-11-16 01:58:24,726 - multitools - INFO - quiz_generator: Successfully generated quiz (1670 characters) for constraints: 12th grader, 25 minutes
+2025-11-16 01:58:24,727 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 01:58:24,748 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/atomic_number_in_periodic_table_multi_document.pdf
+2025-11-16 02:14:55,497 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: basics of periodic table
+2025-11-16 02:15:06,670 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 02:15:06,670 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 9th grade, 20 mins
+2025-11-16 02:15:17,517 - multitools - WARNING - quiz_generator: Quiz generation produced insufficient content.
+2025-11-16 02:15:17,519 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:15:17,545 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/basics_of_periodic_table_multi_document.pdf
+2025-11-16 02:15:21,330 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachments: basics_of_periodic_table_multi_document.pdf
+2025-11-16 02:16:50,587 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 02:16:59,480 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:16:59,503 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 02:17:02,764 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachments: periodic_table_multi_document.pdf
+2025-11-16 02:17:49,159 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 02:17:59,275 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:17:59,300 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 02:18:56,210 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 02:18:56,212 - multitools - INFO - report_generator: Sending request to Gemini API for topic: periodic table
+2025-11-16 02:19:05,882 - multitools - INFO - report_generator: Successfully generated report (4823 characters) for topic: periodic table
+2025-11-16 02:19:05,885 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:19:05,911 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 02:19:10,282 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachments: periodic_table_multi_document.pdf
+2025-11-16 02:19:32,473 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 02:19:32,475 - multitools - INFO - report_generator: Sending request to Gemini API for topic: periodic table
+2025-11-16 02:19:42,379 - multitools - INFO - report_generator: Successfully generated report (3926 characters) for topic: periodic table
+2025-11-16 02:19:42,381 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:19:42,408 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 02:19:45,583 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachments: periodic_table_multi_document.pdf
+2025-11-16 02:21:00,895 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table basics
+2025-11-16 02:21:00,898 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 02:21:00,898 - multitools - INFO - report_generator: Sending request to Gemini API for topic: periodic table basics
+2025-11-16 02:21:14,029 - multitools - INFO - report_generator: Successfully generated report (6665 characters) for topic: periodic table basics
+2025-11-16 02:21:14,031 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:21:14,067 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_basics_multi_document.pdf
+2025-11-16 02:36:03,106 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table basics
+2025-11-16 02:36:03,110 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 02:36:03,110 - multitools - INFO - report_generator: Sending request to Gemini API for topic: periodic table basics
+2025-11-16 02:36:17,967 - multitools - INFO - report_generator: Successfully generated report (4751 characters) for topic: periodic table basics
+2025-11-16 02:36:25,244 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/generated_documents/periodic_table_basics_presentation.pptx
+2025-11-16 02:36:25,245 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:36:25,273 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_basics_multi_document.pdf
+2025-11-16 02:38:34,198 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table of elements specifically d and f block elements
+2025-11-16 02:38:34,201 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 02:38:34,201 - multitools - INFO - report_generator: Sending request to Gemini API for topic: periodic table of elements specifically d and f block elements
+2025-11-16 02:38:47,215 - multitools - INFO - report_generator: Successfully generated report (6256 characters) for topic: periodic table of elements specifically d and f block elements
+2025-11-16 02:38:47,217 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:38:47,250 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_of_elements_specifically_d_and_f_block_elements_multi_document.pdf
+2025-11-16 02:41:36,742 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: f block elements
+2025-11-16 02:41:36,746 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 02:41:36,746 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f block elements
+2025-11-16 02:41:49,039 - multitools - INFO - report_generator: Successfully generated report (5220 characters) for topic: f block elements
+2025-11-16 02:41:49,042 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:41:49,072 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-16 02:41:52,935 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachments: f_block_elements_multi_document.pdf
+2025-11-16 02:50:08,989 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: f block elements
+2025-11-16 02:50:08,992 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 02:50:08,992 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f block elements
+2025-11-16 02:50:19,125 - multitools - INFO - report_generator: Successfully generated report (5105 characters) for topic: f block elements
+2025-11-16 02:50:19,143 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/generated_documents/f_block_elements_presentation.pptx
+2025-11-16 02:50:19,145 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:50:19,170 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-16 02:50:53,643 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: f block elements
+2025-11-16 02:50:53,647 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 02:50:53,647 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f block elements
+2025-11-16 02:51:05,578 - multitools - INFO - report_generator: Successfully generated report (5407 characters) for topic: f block elements
+2025-11-16 02:51:05,580 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-16 02:51:14,634 - multitools - INFO - quiz_generator: Successfully generated quiz (1751 characters) for constraints: 8th grade, 20 minutes
+2025-11-16 02:51:14,654 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/generated_documents/f_block_elements_presentation.pptx
+2025-11-16 02:51:14,656 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 02:51:14,692 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-16 17:01:53,818 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table basics
+2025-11-16 17:02:04,759 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 17:02:04,759 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 9th grader, 20-minute
+2025-11-16 17:02:15,741 - multitools - INFO - quiz_generator: Successfully generated quiz (824 characters) for constraints: 9th grader, 20-minute
+2025-11-16 17:02:15,750 - multitools - INFO - report_generator: Sending request to Gemini API for topic: periodic table basics
+2025-11-16 17:02:28,536 - multitools - INFO - report_generator: Successfully generated report (6507 characters) for topic: periodic table basics
+2025-11-16 17:02:28,581 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/generated_documents/periodic_table_basics_presentation.pptx
+2025-11-16 17:02:28,583 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 17:02:28,645 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_basics_multi_document.pdf
+2025-11-16 17:02:33,973 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachments: periodic_table_basics_multi_document.pdf periodic_table_basics_presentation.pptx
+2025-11-16 18:01:16,942 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 18:01:16,946 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 18:01:16,946 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-16 18:01:25,315 - multitools - INFO - quiz_generator: Successfully generated quiz (1596 characters) for constraints: None, None
+2025-11-16 18:01:25,327 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 18:01:25,346 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 18:57:32,637 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-16 18:57:32,638 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 18:57:32,642 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 18:57:32,642 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-16 18:57:41,984 - multitools - INFO - quiz_generator: Successfully generated quiz (1828 characters) for constraints: None, None
+2025-11-16 18:57:42,002 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 18:57:42,045 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 18:57:46,413 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachments: periodic_table_multi_document.pdf
+2025-11-16 19:08:07,421 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-16 19:08:07,422 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 19:08:19,450 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 19:08:19,490 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 19:19:05,076 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-16 19:19:05,076 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: chemical bonding
+2025-11-16 19:19:14,716 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 19:19:14,720 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/chemical_bonding_multi_document.pdf
+2025-11-16 19:19:31,102 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-16 19:19:31,103 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 19:19:31,105 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 19:19:31,105 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-16 19:19:41,528 - multitools - INFO - quiz_generator: Successfully generated quiz (2301 characters) for constraints: None, None
+2025-11-16 19:19:41,538 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 19:19:41,555 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 19:38:02,165 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-16 19:38:02,166 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: f block elements
+2025-11-16 19:38:02,171 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 19:38:02,171 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-16 19:38:13,045 - multitools - INFO - quiz_generator: Successfully generated quiz (2242 characters) for constraints: None, None
+2025-11-16 19:38:13,056 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 19:38:13,092 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-16 19:38:17,462 - multitools - INFO - email_tool: Email sent to vivekhruday005@gmail.com with attachments: f_block_elements_multi_document.pdf
+2025-11-16 19:41:17,975 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-16 19:41:17,976 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 19:41:17,979 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 19:41:17,979 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-16 19:41:27,499 - multitools - INFO - quiz_generator: Successfully generated quiz (2315 characters) for constraints: None, None
+2025-11-16 19:41:47,780 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-16 19:41:47,780 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: periodic table
+2025-11-16 19:41:47,781 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-16 19:41:56,608 - multitools - INFO - quiz_generator: Successfully generated quiz (1771 characters) for constraints: None, None
+2025-11-16 19:41:56,610 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 19:41:56,621 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/periodic_table_multi_document.pdf
+2025-11-16 19:57:04,447 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-16 19:57:04,447 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: f block elements
+2025-11-16 19:57:04,451 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-16 19:57:04,451 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-16 19:57:15,540 - multitools - INFO - quiz_generator: Successfully generated quiz (1615 characters) for constraints: None, None
+2025-11-16 19:57:28,661 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 19:57:28,693 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-16 19:59:36,738 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-16 19:59:36,738 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-16 19:59:36,740 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-16 19:59:46,075 - multitools - INFO - quiz_generator: Successfully generated quiz (2231 characters) for constraints: None, None
+2025-11-16 19:59:46,087 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-16 19:59:46,104 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_multi_document.pdf
+2025-11-16 19:59:50,859 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachments: d_block_elements_multi_document.pdf
+2025-11-17 22:27:59,043 - multitools - ERROR - PDF Error: Not enough horizontal space to render a single character
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/multitools.py", line 241, in pdf_generator
+    pdf.multi_cell(0, 6, line)
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/fpdf.py", line 242, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/deprecation.py", line 32, in wrapper
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/fpdf.py", line 4550, in multi_cell
+    text_line = multi_line_break.get_line()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/fpdf/line_break.py", line 792, in get_line
+    raise FPDFException(
+fpdf.errors.FPDFException: Not enough horizontal space to render a single character
+2025-11-17 22:31:09,335 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 22:31:09,335 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-17 22:31:09,337 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 22:31:09,337 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-17 22:31:25,108 - multitools - INFO - quiz_generator: Successfully generated quiz (1528 characters) for constraints: 8th grade, 20 minutes
+2025-11-17 22:31:25,110 - multitools - WARNING - `write_markdown` not found. Is `fpdf2` installed? Falling back to plain text.
+2025-11-17 22:31:25,119 - multitools - INFO - ✅ PDF generated successfully (plain text fallback): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_multi_document.pdf
+2025-11-17 22:38:46,783 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 22:38:46,783 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-17 22:38:46,785 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 22:38:46,786 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-17 22:39:27,558 - multitools - INFO - quiz_generator: Successfully generated quiz (1881 characters) for constraints: 8th grade, 20 minutes
+2025-11-17 22:39:27,648 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_multi_document.pdf
+2025-11-17 22:40:00,511 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 22:40:00,511 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-17 22:40:00,513 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 22:40:00,513 - multitools - INFO - report_generator: Sending request to Gemini API for topic: d-block elements
+2025-11-17 22:40:29,683 - multitools - INFO - report_generator: Successfully generated report (4480 characters) for topic: d-block elements
+2025-11-17 22:40:29,757 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_multi_document.pdf
+2025-11-17 22:41:10,254 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 22:41:10,254 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-17 22:41:10,257 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 22:41:10,257 - multitools - INFO - report_generator: Sending request to Gemini API for topic: d-block elements
+2025-11-17 22:41:37,056 - multitools - INFO - report_generator: Successfully generated report (3656 characters) for topic: d-block elements
+2025-11-17 22:41:37,084 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/generated_documents/d_block_elements_presentation.pptx
+2025-11-17 22:41:37,151 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_multi_document.pdf
+2025-11-17 22:42:54,642 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 22:42:54,643 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d-block elements
+2025-11-17 22:42:54,646 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 22:42:54,646 - multitools - INFO - report_generator: Sending request to Gemini API for topic: d-block elements
+2025-11-17 22:43:04,880 - multitools - INFO - report_generator: Successfully generated report (4155 characters) for topic: d-block elements
+2025-11-17 22:43:04,955 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_multi_document.pdf
+2025-11-17 22:43:13,149 - multitools - INFO - email_tool: Email sent to vysishtyakaranam@gmail.com with attachments: d_block_elements_multi_document.pdf
+2025-11-17 23:11:16,666 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 23:11:16,666 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-17 23:11:16,669 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 23:11:16,669 - multitools - INFO - report_generator: Sending request to Gemini API for Markdown report: f-block elements
+2025-11-17 23:11:34,817 - multitools - INFO - report_generator: Successfully generated Markdown report (2728 characters)
+2025-11-17 23:11:34,818 - multitools - INFO - Parsing Markdown to JSON for PPTX...
+2025-11-17 23:11:34,818 - multitools - INFO - Building styled PPTX from JSON...
+2025-11-17 23:11:34,837 - multitools - ERROR - presentation_generator exception: 'FillFormat' object has no attribute 'none'
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/multitools.py", line 638, in presentation_generator
+    _create_ppt_from_json(topic, slide_json, filepath)
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/multitools.py", line 599, in _create_ppt_from_json
+    shape.line.fill.none()
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FillFormat' object has no attribute 'none'
+2025-11-17 23:11:34,839 - multitools - INFO - quiz_generator: Sending request to Gemini API for Markdown quiz: 8th grade, 20 minutes
+2025-11-17 23:11:53,412 - multitools - INFO - quiz_generator: Successfully generated Markdown quiz (493 characters)
+2025-11-17 23:11:53,415 - multitools - INFO - PDF generator removing junk text: 'F-BLOCK ELEMENTS: f-block elements
+========================================'
+2025-11-17 23:11:53,432 - multitools - INFO - ✅ Professional PDF generated (font-safe): /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-17 23:13:52,063 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 23:13:52,063 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-17 23:13:52,065 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 23:13:52,065 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f-block elements
+2025-11-17 23:14:05,647 - multitools - INFO - report_generator: Successfully generated report (3303 characters) for topic: f-block elements
+2025-11-17 23:14:05,668 - multitools - INFO - ✅ Presentation generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/generated_documents/f_block_elements_presentation.pptx
+2025-11-17 23:14:05,670 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-17 23:14:38,019 - multitools - INFO - quiz_generator: Successfully generated quiz (1960 characters) for constraints: 8th grade, 20 minutes
+2025-11-17 23:14:38,124 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-17 23:16:58,265 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 23:16:58,265 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-17 23:16:58,267 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 23:16:58,267 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f-block elements
+2025-11-17 23:17:13,651 - multitools - INFO - report_generator: Successfully generated report (4743 characters) for topic: f-block elements
+2025-11-17 23:17:13,654 - multitools - INFO - Parsing Markdown to JSON for PPTX...
+2025-11-17 23:17:13,654 - multitools - INFO - Building styled PPTX from JSON...
+2025-11-17 23:17:13,662 - multitools - ERROR - presentation_generator exception: NO_FILL
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/multitools.py", line 643, in presentation_generator
+    _create_ppt_from_json(topic, slide_json, filepath)
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/multitools.py", line 327, in _create_ppt_from_json
+    shape.line.fill.type = MSO_FILL.NO_FILL
+                           ^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/enum.py", line 786, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: NO_FILL
+2025-11-17 23:17:13,702 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-17 23:17:32,765 - multitools - INFO - quiz_generator: Successfully generated quiz (2025 characters) for constraints: 8th grade, 20 minutes
+2025-11-17 23:17:32,829 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-17 23:20:03,721 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 23:20:03,721 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-17 23:20:03,723 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 23:20:03,723 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f-block elements
+2025-11-17 23:20:28,135 - multitools - INFO - report_generator: Successfully generated report (4222 characters) for topic: f-block elements
+2025-11-17 23:20:28,136 - multitools - INFO - Parsing Markdown to JSON for PPTX...
+2025-11-17 23:20:28,136 - multitools - INFO - Building styled PPTX from JSON...
+2025-11-17 23:20:28,148 - multitools - INFO - ✅ Professional PPTX generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_presentation.pptx
+2025-11-17 23:20:28,150 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-17 23:21:01,031 - multitools - INFO - quiz_generator: Successfully generated quiz (1680 characters) for constraints: 8th grade, 20 minutes
+2025-11-17 23:21:01,095 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-17 23:24:04,046 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 23:24:04,046 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-17 23:24:04,049 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 23:24:04,049 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f-block elements
+2025-11-17 23:24:34,943 - multitools - INFO - report_generator: Successfully generated report (3688 characters) for topic: f-block elements
+2025-11-17 23:24:35,003 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-17 23:24:40,165 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: f_block_elements_multi_document.pdf
+2025-11-17 23:26:51,100 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 23:26:51,100 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-17 23:26:51,102 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 23:26:51,102 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f-block elements
+2025-11-17 23:27:21,544 - multitools - INFO - report_generator: Successfully generated report (3461 characters) for topic: f-block elements
+2025-11-17 23:27:21,558 - multitools - INFO - ✅ Professional PPTX (v2) generated: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_presentation.pptx
+2025-11-17 23:27:21,618 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-17 23:27:26,970 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: f_block_elements_multi_document.pdf f_block_elements_presentation.pptx
+2025-11-17 23:29:07,038 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 23:29:07,038 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-17 23:29:07,040 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 23:29:07,040 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f-block elements
+2025-11-17 23:29:25,624 - multitools - INFO - report_generator: Successfully generated report (3155 characters) for topic: f-block elements
+2025-11-17 23:29:25,645 - multitools - INFO - ✅ Professional PPTX (v3 - Cleaned) generated: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_presentation.pptx
+2025-11-17 23:29:25,705 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-17 23:29:31,785 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: f_block_elements_multi_document.pdf f_block_elements_presentation.pptx
+2025-11-17 23:31:17,282 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 23:31:17,282 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-17 23:31:17,284 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 23:31:17,284 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f-block elements
+2025-11-17 23:31:33,469 - multitools - INFO - report_generator: Successfully generated report (5044 characters) for topic: f-block elements
+2025-11-17 23:31:33,493 - multitools - INFO - ✅ Professional PPTX (v3 - Cleaned) generated: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_presentation.pptx
+2025-11-17 23:31:33,554 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-17 23:31:39,425 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: f_block_elements_multi_document.pdf f_block_elements_presentation.pptx
+2025-11-17 23:32:25,936 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 23:32:25,937 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-17 23:32:25,939 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 23:32:25,939 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f-block elements
+2025-11-17 23:33:16,915 - multitools - INFO - report_generator: Successfully generated report (4388 characters) for topic: f-block elements
+2025-11-17 23:33:16,917 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-17 23:33:26,064 - multitools - INFO - quiz_generator: Successfully generated quiz (1402 characters) for constraints: 8th grade, 20 minutes
+2025-11-17 23:33:26,121 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-17 23:33:31,371 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: f_block_elements_multi_document.pdf
+2025-11-17 23:34:39,361 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-17 23:34:39,361 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: f-block elements
+2025-11-17 23:34:39,364 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-17 23:34:39,364 - multitools - INFO - report_generator: Sending request to Gemini API for topic: f-block elements
+2025-11-17 23:34:54,770 - multitools - INFO - report_generator: Successfully generated report (3775 characters) for topic: f-block elements
+2025-11-17 23:34:54,771 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: 8th grade, 20 minutes
+2025-11-17 23:35:09,158 - multitools - INFO - quiz_generator: Successfully generated quiz (1970 characters) for constraints: 8th grade, 20 minutes
+2025-11-17 23:35:09,216 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/f_block_elements_multi_document.pdf
+2025-11-17 23:35:14,283 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: f_block_elements_multi_document.pdf
+2025-11-18 01:15:42,087 - multitools - ERROR - Failed to initialize retriever: Could not connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/multitools.py", line 84, in _init_retriever
+    _retriever = Retriever(log_dir=Path("logs"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/retrieval.py", line 83, in __init__
+    raise ConnectionError("Could not connect to Elasticsearch.")
+ConnectionError: Could not connect to Elasticsearch.
+2025-11-18 01:15:42,088 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-18 01:15:42,091 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-18 01:15:42,091 - multitools - INFO - report_generator: Sending request to Gemini API for topic: radioactive elements
+2025-11-18 01:15:47,363 - multitools - INFO - report_generator: Successfully generated report (2533 characters) for topic: radioactive elements
+2025-11-18 01:15:47,471 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_elements_multi_document.pdf
+2025-11-18 01:15:52,581 - multitools - INFO - email_tool: HTML Email sent to saisudhan2005ss@gmail.com with attachments: radioactive_elements_multi_document.pdf
+2025-11-18 01:17:32,839 - multitools - ERROR - Failed to initialize retriever: Could not connect to Elasticsearch.
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/multitools.py", line 84, in _init_retriever
+    _retriever = Retriever(log_dir=Path("logs"))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/retrieval.py", line 83, in __init__
+    raise ConnectionError("Could not connect to Elasticsearch.")
+ConnectionError: Could not connect to Elasticsearch.
+2025-11-18 01:17:32,839 - multitools - ERROR - knowledge_retrieval: RAG retriever not initialized. Check Elasticsearch connection.
+2025-11-18 01:17:32,840 - multitools - INFO - report_generator: Sending request to Gemini API for topic: metals and non-metals
+2025-11-18 01:17:41,741 - multitools - INFO - report_generator: Successfully generated report (3294 characters) for topic: metals and non-metals
+2025-11-18 01:17:41,784 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/metals_and_non_metals_multi_document.pdf
+2025-11-18 01:17:47,475 - multitools - INFO - email_tool: HTML Email sent to saisudhan2005ss@gmail.com with attachments: metals_and_non_metals_multi_document.pdf
+2025-11-18 01:19:58,430 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-18 01:19:58,431 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: radioactive elements
+2025-11-18 01:19:58,433 - multitools - INFO - report_generator: Sending request to Gemini API for topic: radioactive elements
+2025-11-18 01:20:15,167 - multitools - INFO - report_generator: Successfully generated report (2715 characters) for topic: radioactive elements
+2025-11-18 01:20:15,292 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_elements_multi_document.pdf
+2025-11-18 01:20:20,041 - multitools - INFO - email_tool: HTML Email sent to saisudhan2005ss@gmail.com with attachments: radioactive_elements_multi_document.pdf
+2025-11-18 01:52:23,589 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-18 01:52:23,589 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: radioactive elements
+2025-11-18 01:52:23,594 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-18 01:52:23,594 - multitools - INFO - report_generator: Sending request to Gemini API for topic: radioactive elements
+2025-11-18 01:52:33,771 - multitools - INFO - report_generator: Successfully generated report (4379 characters) for topic: radioactive elements
+2025-11-18 01:52:33,805 - multitools - INFO - ✅ Professional PPTX (v3 - Cleaned) generated: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_elements_presentation.pptx
+2025-11-18 01:52:33,919 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_elements_multi_document.pdf
+2025-11-18 01:52:40,220 - multitools - INFO - email_tool: HTML Email sent to saisudhan2005ss@gmail.com with attachments: radioactive_elements_multi_document.pdf radioactive_elements_presentation.pptx
+2025-11-18 01:55:15,602 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-18 01:55:15,603 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: radioactive f-block elements (lanthanoids and actinoids)
+2025-11-18 01:55:15,605 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-18 01:55:25,804 - multitools - INFO - quiz_generator: Successfully generated quiz (2335 characters) for constraints: None, None
+2025-11-18 01:55:25,825 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_f_block_elements__lanthanoids_and_actinoids__multi_document.pdf
+2025-11-18 01:55:32,665 - multitools - INFO - email_tool: HTML Email sent to saisudhan2005ss@gmail.com with attachments: radioactive_f_block_elements__lanthanoids_and_actinoids__multi_document.pdf
+2025-11-18 23:46:37,159 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-18 23:46:37,160 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: radioactive elements
+2025-11-18 23:46:37,165 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-18 23:46:37,166 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-18 23:46:47,085 - multitools - INFO - quiz_generator: Successfully generated quiz (2358 characters) for constraints: None, None
+2025-11-18 23:46:47,337 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_elements_multi_document.pdf
+2025-11-18 23:46:55,749 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: radioactive_elements_multi_document.pdf
+2025-11-19 19:26:23,144 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-19 19:26:23,144 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: radioactive elements
+2025-11-19 19:26:38,272 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-19 19:26:38,272 - multitools - INFO - report_generator: Sending request to Gemini API for topic: radioactive elements
+2025-11-19 19:26:50,935 - multitools - INFO - report_generator: Successfully generated report (4426 characters) for topic: radioactive elements
+2025-11-19 19:26:50,972 - multitools - INFO - ✅ Professional PPTX (v3 - Cleaned) generated: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_elements_presentation.pptx
+2025-11-19 19:26:51,168 - multitools - ERROR - pdf_generator exception: bad hierarchy level in row 2
+Traceback (most recent call last):
+  File "/home/vivek/test/gitrepo/lma-major-project-the-aurors/gemini/multitools.py", line 443, in pdf_generator
+    pdf.save(filepath)
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/markdown_pdf/__init__.py", line 123, in save
+    doc = self._make_doc()
+          ^^^^^^^^^^^^^^^^
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/markdown_pdf/__init__.py", line 117, in _make_doc
+    doc.set_toc(self.toc)
+  File "/home/vivek/miniconda3/envs/myenv/lib/python3.11/site-packages/pymupdf/__init__.py", line 7185, in set_toc
+    raise ValueError("bad hierarchy level in row %i" % (i + 1))
+ValueError: bad hierarchy level in row 2
+2025-11-19 19:26:55,510 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: radioactive_elements_presentation.pptx
+2025-11-19 19:28:28,394 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-19 19:28:28,394 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: radioactive elements
+2025-11-19 19:28:28,396 - multitools - INFO - report_generator: Sending request to Gemini API for topic: radioactive elements
+2025-11-19 19:28:48,231 - multitools - INFO - report_generator: Successfully generated report (3942 characters) for topic: radioactive elements
+2025-11-19 19:28:48,255 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_elements_multi_document.pdf
+2025-11-19 19:31:15,532 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-19 19:31:15,532 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: radioactive elements
+2025-11-19 19:31:15,535 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-19 19:31:15,535 - multitools - INFO - report_generator: Sending request to Gemini API for topic: radioactive elements
+2025-11-19 19:31:32,507 - multitools - INFO - report_generator: Successfully generated report (4222 characters) for topic: radioactive elements
+2025-11-19 19:31:32,593 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_elements_multi_document.pdf
+2025-11-19 19:31:38,354 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: radioactive_elements_multi_document.pdf
+2025-11-19 19:32:32,851 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-19 19:32:32,851 - multitools - INFO - knowledge_retrieval: Successfully retrieved 5 chunks for query: radioactive elements
+2025-11-19 19:32:32,856 - multitools - INFO - report_generator: Sending request to Gemini API for topic: radioactive elements
+2025-11-19 19:34:00,094 - multitools - INFO - report_generator: Successfully generated report (6305 characters) for topic: radioactive elements
+2025-11-19 19:34:00,097 - multitools - INFO - quiz_generator: Sending request to Gemini API with constraints: None, None
+2025-11-19 19:34:29,376 - multitools - INFO - quiz_generator: Successfully generated quiz (759 characters) for constraints: None, None
+2025-11-19 19:34:29,421 - multitools - INFO - ✅ Professional PPTX (v3 - Cleaned) generated: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_elements_presentation.pptx
+2025-11-19 19:34:29,434 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/radioactive_elements_multi_document.pdf
+2025-11-19 19:34:37,075 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: radioactive_elements_multi_document.pdf radioactive_elements_presentation.pptx
+2025-11-19 23:02:33,795 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-19 23:02:33,800 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d block elements
+2025-11-19 23:02:33,846 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-19 23:02:33,846 - multitools - INFO - report_generator: Sending request to Gemini API for topic: d block elements
+2025-11-19 23:02:50,585 - multitools - INFO - report_generator: Successfully generated report (5769 characters) for topic: d block elements
+2025-11-19 23:02:50,758 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_multi_document.pdf
+2025-11-19 23:03:04,608 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: d_block_elements_multi_document.pdf
+2025-11-19 23:19:34,281 - multitools - INFO - knowledge_retrieval: Offloaded retriever models to CPU.
+2025-11-19 23:19:34,282 - multitools - INFO - knowledge_retrieval: Successfully retrieved 4 chunks for query: d block elements
+2025-11-19 23:19:34,284 - multitools - INFO - LangChain ChatGoogleGenerativeAI initialized with model: gemini-2.5-flash
+2025-11-19 23:19:34,284 - multitools - INFO - report_generator: Sending request to Gemini API for topic: d block elements
+2025-11-19 23:19:47,249 - multitools - INFO - report_generator: Successfully generated report (6205 characters) for topic: d block elements
+2025-11-19 23:19:47,341 - multitools - INFO - ✅ Markdown PDF generated successfully: /home/vivek/test/gitrepo/lma-major-project-the-aurors/generated_documents/d_block_elements_multi_document.pdf
+2025-11-19 23:20:09,053 - multitools - INFO - email_tool: HTML Email sent to vivekhruday005@gmail.com with attachments: d_block_elements_multi_document.pdf
