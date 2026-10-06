@@ -1,8 +1,6 @@
-# LMA Major Project - Team Aurors
-## Vysishtya Karanam - 2022102044
-## Vivek Hruday Kavuri - 2022114012
+# Gemini Server - Agentic RAG Assistant
 
-This repository contains the source code of submission of `Team Aurors` for the Major Project of the course `Language Models and Agents`.
+This folder contains the source code for the Gemini-based multi-modal Agentic RAG pipeline.
 
 ## Progress
 - Gathered data and Metadata in a semi-automated manner.
